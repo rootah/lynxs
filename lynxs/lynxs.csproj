@@ -72,6 +72,12 @@
     <Compile Include="payments.Designer.cs">
       <DependentUpon>payments.cs</DependentUpon>
     </Compile>
+    <Compile Include="peoples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="peoples.Designer.cs">
+      <DependentUpon>peoples.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="main.resx">
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="payments.resx">
       <DependentUpon>payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peoples.resx">
+      <DependentUpon>peoples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

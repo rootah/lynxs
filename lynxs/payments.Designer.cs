@@ -205,7 +205,7 @@
             // monthCheck
             // 
             this.monthCheck.GroupIndex = 1;
-            this.monthCheck.Location = new System.Drawing.Point(14, 84);
+            this.monthCheck.Location = new System.Drawing.Point(14, 85);
             this.monthCheck.Name = "monthCheck";
             this.monthCheck.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.monthCheck.Size = new System.Drawing.Size(161, 22);
@@ -216,7 +216,7 @@
             // weekCheck
             // 
             this.weekCheck.GroupIndex = 1;
-            this.weekCheck.Location = new System.Drawing.Point(14, 58);
+            this.weekCheck.Location = new System.Drawing.Point(14, 59);
             this.weekCheck.Name = "weekCheck";
             this.weekCheck.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.weekCheck.Size = new System.Drawing.Size(161, 22);
@@ -227,7 +227,7 @@
             // todayCheck
             // 
             this.todayCheck.GroupIndex = 1;
-            this.todayCheck.Location = new System.Drawing.Point(14, 32);
+            this.todayCheck.Location = new System.Drawing.Point(14, 33);
             this.todayCheck.Name = "todayCheck";
             this.todayCheck.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.todayCheck.Size = new System.Drawing.Size(161, 22);
@@ -291,7 +291,7 @@
             // custom
             // 
             this.custom.Control = this.customDrop;
-            this.custom.Location = new System.Drawing.Point(0, 90);
+            this.custom.Location = new System.Drawing.Point(0, 89);
             this.custom.Name = "custom";
             this.custom.Size = new System.Drawing.Size(165, 36);
             this.custom.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 5, 5);
@@ -346,13 +346,13 @@
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 78);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(165, 12);
+            this.simpleSeparator1.Size = new System.Drawing.Size(165, 11);
             this.simpleSeparator1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 5, 5);
             // 
             // customLabel
             // 
             this.customLabel.AllowHotTrack = false;
-            this.customLabel.Location = new System.Drawing.Point(0, 126);
+            this.customLabel.Location = new System.Drawing.Point(0, 125);
             this.customLabel.Name = "customLabel";
             this.customLabel.Size = new System.Drawing.Size(165, 17);
             this.customLabel.Text = "...";
@@ -362,7 +362,7 @@
             // spacePlace
             // 
             this.spacePlace.AllowHotTrack = false;
-            this.spacePlace.Location = new System.Drawing.Point(0, 143);
+            this.spacePlace.Location = new System.Drawing.Point(0, 142);
             this.spacePlace.Name = "spacePlace";
             this.spacePlace.Size = new System.Drawing.Size(165, 258);
             this.spacePlace.TextSize = new System.Drawing.Size(0, 0);
@@ -373,7 +373,7 @@
             this.navBarGroupControlContainer2.Appearance.Options.UseBackColor = true;
             this.navBarGroupControlContainer2.Controls.Add(this.tabControl);
             this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
-            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(189, 443);
+            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(189, 427);
             this.navBarGroupControlContainer2.TabIndex = 1;
             // 
             // tabControl
@@ -386,7 +386,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedTabPage = this.xtraTabPage1;
-            this.tabControl.Size = new System.Drawing.Size(189, 443);
+            this.tabControl.Size = new System.Drawing.Size(189, 427);
             this.tabControl.TabIndex = 1;
             this.tabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -403,7 +403,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.gridStd);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(183, 415);
+            this.xtraTabPage2.Size = new System.Drawing.Size(187, 402);
             this.xtraTabPage2.Text = "students";
             // 
             // gridGroup
@@ -430,7 +430,7 @@
             this.gridStd.Location = new System.Drawing.Point(0, 0);
             this.gridStd.MainView = this.viewStd;
             this.gridStd.Name = "gridStd";
-            this.gridStd.Size = new System.Drawing.Size(183, 415);
+            this.gridStd.Size = new System.Drawing.Size(187, 402);
             this.gridStd.TabIndex = 0;
             this.gridStd.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.viewStd});
@@ -452,10 +452,10 @@
             // 
             // gridTwo
             // 
-            this.gridTwo.Location = new System.Drawing.Point(503, 12);
+            this.gridTwo.Location = new System.Drawing.Point(510, 12);
             this.gridTwo.MainView = this.gridViewTwo;
             this.gridTwo.Name = "gridTwo";
-            this.gridTwo.Size = new System.Drawing.Size(481, 532);
+            this.gridTwo.Size = new System.Drawing.Size(474, 532);
             this.gridTwo.TabIndex = 8;
             this.gridTwo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewTwo});
@@ -475,9 +475,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridTwo;
-            this.layoutControlItem2.Location = new System.Drawing.Point(491, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(498, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(485, 536);
+            this.layoutControlItem2.Size = new System.Drawing.Size(478, 536);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -486,7 +486,7 @@
             this.splitterItem1.AllowHotTrack = true;
             this.splitterItem1.Location = new System.Drawing.Point(486, 0);
             this.splitterItem1.Name = "splitterItem1";
-            this.splitterItem1.Size = new System.Drawing.Size(5, 536);
+            this.splitterItem1.Size = new System.Drawing.Size(12, 536);
             // 
             // payments
             // 
