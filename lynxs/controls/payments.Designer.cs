@@ -1,4 +1,4 @@
-﻿namespace lynxs
+﻿namespace lynxs.controls
 {
     partial class payments
     {
@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.layoutCommon = new DevExpress.XtraLayout.LayoutControl();
+            this.gridTwo = new DevExpress.XtraGrid.GridControl();
+            this.gridViewTwo = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridOne = new DevExpress.XtraGrid.GridControl();
             this.gridViewOne = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.paymentsNav = new DevExpress.XtraNavBar.NavBarControl();
@@ -45,27 +47,29 @@
             this.week = new DevExpress.XtraLayout.LayoutControlItem();
             this.month = new DevExpress.XtraLayout.LayoutControlItem();
             this.custom = new DevExpress.XtraLayout.LayoutControlItem();
-            this.navTargetTab = new DevExpress.XtraNavBar.NavBarGroup();
-            this.GroupCommon = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.customLabel = new DevExpress.XtraLayout.SimpleLabelItem();
             this.spacePlace = new DevExpress.XtraLayout.EmptySpaceItem();
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.tabControl = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridGroup = new DevExpress.XtraGrid.GridControl();
             this.viewGroup = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridStd = new DevExpress.XtraGrid.GridControl();
             this.viewStd = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridTwo = new DevExpress.XtraGrid.GridControl();
-            this.gridViewTwo = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.navTargetTab = new DevExpress.XtraNavBar.NavBarGroup();
+            this.GroupCommon = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
+            this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCommon)).BeginInit();
             this.layoutCommon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentsNav)).BeginInit();
@@ -79,9 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.week)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.month)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupCommon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spacePlace)).BeginInit();
@@ -89,15 +90,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).BeginInit();
             this.tabControl.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewGroup)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridStd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewStd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridTwo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupCommon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutCommon
@@ -105,21 +109,43 @@
             this.layoutCommon.Controls.Add(this.gridTwo);
             this.layoutCommon.Controls.Add(this.gridOne);
             this.layoutCommon.Controls.Add(this.paymentsNav);
+            this.layoutCommon.CustomizationMode = DevExpress.XtraLayout.CustomizationModes.Quick;
             this.layoutCommon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutCommon.Location = new System.Drawing.Point(0, 0);
             this.layoutCommon.Name = "layoutCommon";
-            this.layoutCommon.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(793, 273, 250, 350);
+            this.layoutCommon.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(793, 273, 495, 498);
             this.layoutCommon.Root = this.GroupCommon;
             this.layoutCommon.Size = new System.Drawing.Size(996, 556);
             this.layoutCommon.TabIndex = 0;
             this.layoutCommon.Text = "layoutControl1";
             // 
+            // gridTwo
+            // 
+            this.gridTwo.Location = new System.Drawing.Point(511, 45);
+            this.gridTwo.MainView = this.gridViewTwo;
+            this.gridTwo.Name = "gridTwo";
+            this.gridTwo.Size = new System.Drawing.Size(468, 499);
+            this.gridTwo.TabIndex = 8;
+            this.gridTwo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewTwo});
+            // 
+            // gridViewTwo
+            // 
+            this.gridViewTwo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gridViewTwo.GridControl = this.gridTwo;
+            this.gridViewTwo.Name = "gridViewTwo";
+            this.gridViewTwo.OptionsView.ShowColumnHeaders = false;
+            this.gridViewTwo.OptionsView.ShowGroupPanel = false;
+            this.gridViewTwo.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
+            this.gridViewTwo.OptionsView.ShowIndicator = false;
+            this.gridViewTwo.ViewCaption = "payments detailed";
+            // 
             // gridOne
             // 
-            this.gridOne.Location = new System.Drawing.Point(205, 12);
+            this.gridOne.Location = new System.Drawing.Point(210, 45);
             this.gridOne.MainView = this.gridViewOne;
             this.gridOne.Name = "gridOne";
-            this.gridOne.Size = new System.Drawing.Size(289, 532);
+            this.gridOne.Size = new System.Drawing.Size(285, 499);
             this.gridOne.TabIndex = 7;
             this.gridOne.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewOne});
@@ -134,12 +160,11 @@
             this.gridViewOne.OptionsView.ShowGroupPanel = false;
             this.gridViewOne.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
             this.gridViewOne.OptionsView.ShowIndicator = false;
-            this.gridViewOne.OptionsView.ShowViewCaption = true;
             this.gridViewOne.ViewCaption = "payments common";
             // 
             // paymentsNav
             // 
-            this.paymentsNav.ActiveGroup = this.navTargetTab;
+            this.paymentsNav.ActiveGroup = this.navCommonTab;
             this.paymentsNav.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.paymentsNav.Controls.Add(this.navBarGroupControlContainer1);
             this.paymentsNav.Controls.Add(this.navBarGroupControlContainer2);
@@ -163,6 +188,7 @@
             // 
             this.navCommonTab.Caption = "payments / common";
             this.navCommonTab.ControlContainer = this.navBarGroupControlContainer1;
+            this.navCommonTab.Expanded = true;
             this.navCommonTab.GroupClientHeight = 218;
             this.navCommonTab.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navCommonTab.Name = "navCommonTab";
@@ -173,7 +199,7 @@
             this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
             this.navBarGroupControlContainer1.Controls.Add(this.layoutPeriod);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(189, 443);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(189, 427);
             this.navBarGroupControlContainer1.TabIndex = 0;
             // 
             // layoutPeriod
@@ -187,7 +213,7 @@
             this.layoutPeriod.Name = "layoutPeriod";
             this.layoutPeriod.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(244, 29, 516, 428);
             this.layoutPeriod.Root = this.periodRootGroup;
-            this.layoutPeriod.Size = new System.Drawing.Size(189, 443);
+            this.layoutPeriod.Size = new System.Drawing.Size(189, 427);
             this.layoutPeriod.TabIndex = 0;
             this.layoutPeriod.Text = "layoutControl2";
             // 
@@ -211,6 +237,7 @@
             this.monthCheck.Size = new System.Drawing.Size(161, 22);
             this.monthCheck.StyleController = this.layoutPeriod;
             this.monthCheck.TabIndex = 6;
+            this.monthCheck.TabStop = false;
             this.monthCheck.Text = "month";
             // 
             // weekCheck
@@ -222,6 +249,7 @@
             this.weekCheck.Size = new System.Drawing.Size(161, 22);
             this.weekCheck.StyleController = this.layoutPeriod;
             this.weekCheck.TabIndex = 5;
+            this.weekCheck.TabStop = false;
             this.weekCheck.Text = "week";
             // 
             // todayCheck
@@ -233,6 +261,7 @@
             this.todayCheck.Size = new System.Drawing.Size(161, 22);
             this.todayCheck.StyleController = this.layoutPeriod;
             this.todayCheck.TabIndex = 4;
+            this.todayCheck.TabStop = false;
             this.todayCheck.Text = "today";
             // 
             // periodRootGroup
@@ -243,7 +272,7 @@
             this.periodGroup});
             this.periodRootGroup.Location = new System.Drawing.Point(0, 0);
             this.periodRootGroup.Name = "Root";
-            this.periodRootGroup.Size = new System.Drawing.Size(189, 443);
+            this.periodRootGroup.Size = new System.Drawing.Size(189, 427);
             this.periodRootGroup.TextVisible = false;
             // 
             // periodGroup
@@ -258,7 +287,7 @@
             this.spacePlace});
             this.periodGroup.Location = new System.Drawing.Point(0, 0);
             this.periodGroup.Name = "periodGroup";
-            this.periodGroup.Size = new System.Drawing.Size(189, 443);
+            this.periodGroup.Size = new System.Drawing.Size(189, 427);
             this.periodGroup.Text = "display period";
             // 
             // today
@@ -298,49 +327,6 @@
             this.custom.TextSize = new System.Drawing.Size(0, 0);
             this.custom.TextVisible = false;
             // 
-            // navTargetTab
-            // 
-            this.navTargetTab.Caption = "payments / target";
-            this.navTargetTab.ControlContainer = this.navBarGroupControlContainer2;
-            this.navTargetTab.Expanded = true;
-            this.navTargetTab.GroupClientHeight = 150;
-            this.navTargetTab.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navTargetTab.Name = "navTargetTab";
-            // 
-            // GroupCommon
-            // 
-            this.GroupCommon.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.GroupCommon.GroupBordersVisible = false;
-            this.GroupCommon.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
-            this.layoutControlItem3,
-            this.layoutControlItem2,
-            this.splitterItem1});
-            this.GroupCommon.Location = new System.Drawing.Point(0, 0);
-            this.GroupCommon.Name = "Root";
-            this.GroupCommon.Size = new System.Drawing.Size(996, 556);
-            this.GroupCommon.TextVisible = false;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.paymentsNav;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(14, 14);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(193, 536);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.gridOne;
-            this.layoutControlItem3.Location = new System.Drawing.Point(193, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(293, 536);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
@@ -364,7 +350,7 @@
             this.spacePlace.AllowHotTrack = false;
             this.spacePlace.Location = new System.Drawing.Point(0, 142);
             this.spacePlace.Name = "spacePlace";
-            this.spacePlace.Size = new System.Drawing.Size(165, 258);
+            this.spacePlace.Size = new System.Drawing.Size(165, 242);
             this.spacePlace.TextSize = new System.Drawing.Size(0, 0);
             // 
             // navBarGroupControlContainer2
@@ -396,15 +382,8 @@
             // 
             this.xtraTabPage1.Controls.Add(this.gridGroup);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(183, 415);
+            this.xtraTabPage1.Size = new System.Drawing.Size(187, 402);
             this.xtraTabPage1.Text = "groups";
-            // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Controls.Add(this.gridStd);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(187, 402);
-            this.xtraTabPage2.Text = "students";
             // 
             // gridGroup
             // 
@@ -412,7 +391,7 @@
             this.gridGroup.Location = new System.Drawing.Point(0, 0);
             this.gridGroup.MainView = this.viewGroup;
             this.gridGroup.Name = "gridGroup";
-            this.gridGroup.Size = new System.Drawing.Size(183, 415);
+            this.gridGroup.Size = new System.Drawing.Size(187, 402);
             this.gridGroup.TabIndex = 0;
             this.gridGroup.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.viewGroup});
@@ -424,13 +403,20 @@
             this.viewGroup.GridControl = this.gridGroup;
             this.viewGroup.Name = "viewGroup";
             // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.gridStd);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(183, 399);
+            this.xtraTabPage2.Text = "students";
+            // 
             // gridStd
             // 
             this.gridStd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridStd.Location = new System.Drawing.Point(0, 0);
             this.gridStd.MainView = this.viewStd;
             this.gridStd.Name = "gridStd";
-            this.gridStd.Size = new System.Drawing.Size(187, 402);
+            this.gridStd.Size = new System.Drawing.Size(183, 399);
             this.gridStd.TabIndex = 0;
             this.gridStd.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.viewStd});
@@ -450,43 +436,95 @@
             this.viewStd.OptionsView.ShowIndicator = false;
             this.viewStd.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             // 
-            // gridTwo
+            // navTargetTab
             // 
-            this.gridTwo.Location = new System.Drawing.Point(510, 12);
-            this.gridTwo.MainView = this.gridViewTwo;
-            this.gridTwo.Name = "gridTwo";
-            this.gridTwo.Size = new System.Drawing.Size(474, 532);
-            this.gridTwo.TabIndex = 8;
-            this.gridTwo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewTwo});
+            this.navTargetTab.Caption = "payments / focused";
+            this.navTargetTab.ControlContainer = this.navBarGroupControlContainer2;
+            this.navTargetTab.GroupClientHeight = 150;
+            this.navTargetTab.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navTargetTab.Name = "navTargetTab";
             // 
-            // gridViewTwo
+            // GroupCommon
             // 
-            this.gridViewTwo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gridViewTwo.GridControl = this.gridTwo;
-            this.gridViewTwo.Name = "gridViewTwo";
-            this.gridViewTwo.OptionsView.ShowColumnHeaders = false;
-            this.gridViewTwo.OptionsView.ShowGroupPanel = false;
-            this.gridViewTwo.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
-            this.gridViewTwo.OptionsView.ShowIndicator = false;
-            this.gridViewTwo.OptionsView.ShowViewCaption = true;
-            this.gridViewTwo.ViewCaption = "payments detailed";
+            this.GroupCommon.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.GroupCommon.GroupBordersVisible = false;
+            this.GroupCommon.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem3,
+            this.layoutControlItem2,
+            this.simpleLabelItem1,
+            this.splitterItem1,
+            this.simpleLabelItem2});
+            this.GroupCommon.Location = new System.Drawing.Point(0, 0);
+            this.GroupCommon.Name = "Root";
+            this.GroupCommon.Size = new System.Drawing.Size(996, 556);
+            this.GroupCommon.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.paymentsNav;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(14, 14);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(193, 536);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.gridOne;
+            this.layoutControlItem3.Location = new System.Drawing.Point(193, 33);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(294, 503);
+            this.layoutControlItem3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 0, 0, 0);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridTwo;
-            this.layoutControlItem2.Location = new System.Drawing.Point(498, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(499, 33);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(478, 536);
+            this.layoutControlItem2.Size = new System.Drawing.Size(477, 503);
+            this.layoutControlItem2.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 5, 0, 0);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
+            // 
+            // simpleLabelItem1
+            // 
+            this.simpleLabelItem1.AllowHotTrack = false;
+            this.simpleLabelItem1.AppearanceItemCaption.FontSizeDelta = 2;
+            this.simpleLabelItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.simpleLabelItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.simpleLabelItem1.Location = new System.Drawing.Point(193, 0);
+            this.simpleLabelItem1.Name = "simpleLabelItem1";
+            this.simpleLabelItem1.Size = new System.Drawing.Size(294, 33);
+            this.simpleLabelItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(9, 0, 7, 5);
+            this.simpleLabelItem1.Text = "common";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(55, 17);
             // 
             // splitterItem1
             // 
             this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(486, 0);
+            this.splitterItem1.Location = new System.Drawing.Point(487, 0);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(12, 536);
+            // 
+            // simpleLabelItem2
+            // 
+            this.simpleLabelItem2.AllowHotTrack = false;
+            this.simpleLabelItem2.AppearanceItemCaption.FontSizeDelta = 2;
+            this.simpleLabelItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.simpleLabelItem2.AppearanceItemCaption.Options.UseFont = true;
+            this.simpleLabelItem2.AppearanceItemCaption.Options.UseForeColor = true;
+            this.simpleLabelItem2.Location = new System.Drawing.Point(499, 0);
+            this.simpleLabelItem2.Name = "simpleLabelItem2";
+            this.simpleLabelItem2.Size = new System.Drawing.Size(477, 33);
+            this.simpleLabelItem2.Spacing = new DevExpress.XtraLayout.Utils.Padding(9, 0, 7, 5);
+            this.simpleLabelItem2.Text = "detailed";
+            this.simpleLabelItem2.TextSize = new System.Drawing.Size(55, 17);
             // 
             // payments
             // 
@@ -498,6 +536,8 @@
             this.Size = new System.Drawing.Size(996, 556);
             ((System.ComponentModel.ISupportInitialize)(this.layoutCommon)).EndInit();
             this.layoutCommon.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentsNav)).EndInit();
@@ -511,9 +551,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.week)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.month)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GroupCommon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spacePlace)).EndInit();
@@ -521,15 +558,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewGroup)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridStd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewStd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridTwo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupCommon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -572,5 +612,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewTwo;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
+        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
+        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem2;
     }
 }
