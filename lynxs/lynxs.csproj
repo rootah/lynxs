@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v15.2" />
     <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.2" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
@@ -54,17 +57,28 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\db_actions.cs" />
     <Compile Include="classes\db_classes.cs" />
-    <Compile Include="controls\CustomBackstageViewControl.cs">
-      <SubType>Component</SubType>
+    <Compile Include="controls\groupform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\groupform.Designer.cs">
+      <DependentUpon>groupform.cs</DependentUpon>
     </Compile>
     <Compile Include="controls\payments.cs">
       <SubType>UserControl</SubType>
@@ -84,6 +98,9 @@
     <Compile Include="controls\stdform.Designer.cs">
       <DependentUpon>stdform.cs</DependentUpon>
     </Compile>
+    <Compile Include="customcontrols\CustomBackstageViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="forms\main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="controls\groupform.resx">
+      <DependentUpon>groupform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controls\payments.resx">
       <DependentUpon>payments.cs</DependentUpon>
     </EmbeddedResource>

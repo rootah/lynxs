@@ -1,4 +1,5 @@
 ﻿using lynxs.controls;
+using lynxs.customcontrols;
 
 namespace lynxs.forms
 {
@@ -34,7 +35,7 @@ namespace lynxs.forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.formAss = new DevExpress.XtraBars.FormAssistant();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.customBackstage = new lynxs.controls.CustomBackstageViewControl();
+            this.customBackstage = new CustomBackstageViewControl();
             this.backstageStop = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.startNewPop = new DevExpress.XtraBars.BarButtonItem();
             this.newPop = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -135,6 +136,7 @@ namespace lynxs.forms
             this.startNewGroup.Caption = "group";
             this.startNewGroup.Id = 2;
             this.startNewGroup.Name = "startNewGroup";
+            this.startNewGroup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startNewGroup_ItemClick);
             // 
             // startNewStd
             // 
@@ -200,7 +202,7 @@ namespace lynxs.forms
             // 
             // defaultLook
             // 
-            this.defaultLook.LookAndFeel.SkinName = "Office 2016 Dark";
+            this.defaultLook.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
             // backstageMain
             // 
@@ -212,8 +214,8 @@ namespace lynxs.forms
             this.backstageMain.Items.Add(this.navPayments);
             this.backstageMain.Location = new System.Drawing.Point(0, 83);
             this.backstageMain.Name = "backstageMain";
-            this.backstageMain.SelectedTab = this.navPayments;
-            this.backstageMain.SelectedTabIndex = 1;
+            this.backstageMain.SelectedTab = this.navGroups;
+            this.backstageMain.SelectedTabIndex = 0;
             this.backstageMain.Size = new System.Drawing.Size(1385, 422);
             this.backstageMain.TabIndex = 10;
             this.backstageMain.Text = "backstageViewControl1";
@@ -255,14 +257,14 @@ namespace lynxs.forms
             this.navGroups.Caption = "groups / peoples";
             this.navGroups.ContentControl = this.navGroupsClient;
             this.navGroups.Name = "navGroups";
-            this.navGroups.Selected = false;
+            this.navGroups.Selected = true;
             // 
             // navPayments
             // 
             this.navPayments.Caption = "payments";
             this.navPayments.ContentControl = this.navPaymentsClient;
             this.navPayments.Name = "navPayments";
-            this.navPayments.Selected = true;
+            this.navPayments.Selected = false;
             // 
             // main
             // 

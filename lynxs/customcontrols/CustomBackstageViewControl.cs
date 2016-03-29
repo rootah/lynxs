@@ -3,7 +3,7 @@ using DevExpress.Utils.Drawing.Animation;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
 
-namespace lynxs.controls {
+namespace lynxs.customcontrols {
 
     [ToolboxItem(true)]class CustomBackstageViewControl : BackstageViewControl {
     

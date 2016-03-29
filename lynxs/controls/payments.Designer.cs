@@ -407,7 +407,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.gridStd);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(183, 399);
+            this.xtraTabPage2.Size = new System.Drawing.Size(187, 402);
             this.xtraTabPage2.Text = "students";
             // 
             // gridStd
@@ -416,7 +416,7 @@
             this.gridStd.Location = new System.Drawing.Point(0, 0);
             this.gridStd.MainView = this.viewStd;
             this.gridStd.Name = "gridStd";
-            this.gridStd.Size = new System.Drawing.Size(183, 399);
+            this.gridStd.Size = new System.Drawing.Size(187, 402);
             this.gridStd.TabIndex = 0;
             this.gridStd.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.viewStd});
@@ -495,9 +495,7 @@
             // 
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.AppearanceItemCaption.FontSizeDelta = 2;
-            this.simpleLabelItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem1.AppearanceItemCaption.Options.UseForeColor = true;
             this.simpleLabelItem1.Location = new System.Drawing.Point(193, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(294, 33);
@@ -516,9 +514,7 @@
             // 
             this.simpleLabelItem2.AllowHotTrack = false;
             this.simpleLabelItem2.AppearanceItemCaption.FontSizeDelta = 2;
-            this.simpleLabelItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.simpleLabelItem2.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem2.AppearanceItemCaption.Options.UseForeColor = true;
             this.simpleLabelItem2.Location = new System.Drawing.Point(499, 0);
             this.simpleLabelItem2.Name = "simpleLabelItem2";
             this.simpleLabelItem2.Size = new System.Drawing.Size(477, 33);

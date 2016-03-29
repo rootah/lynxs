@@ -1,32 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
-using DevExpress.XtraLayout;
+using lynxs.classes;
+using MongoDB.Bson;
 
 namespace lynxs.controls
 {
-    public partial class stdform : DevExpress.XtraEditors.XtraUserControl
+    public partial class stdform : XtraUserControl
     {
         public stdform()
         {
             InitializeComponent();
+            groupFill();
+        }
+
+        private async void groupFill()
+        {
+            @group.Properties.Items.Clear();
+            group.Properties.Items.AddRange(await db_actions.groupComboFill());
         }
 
         private void parentResize()
 
         {
-            var parentForm = this.ParentForm;
+            var parentForm = ParentForm;
             if (parentForm != null)
             {
-                parentForm.ClientSize = new Size(layoutControl1.Root.MinSize.Width, layoutControl1.Root.MinSize.Height);
+                parentForm.ClientSize = new Size(mainlayout.Root.MinSize.Width, mainlayout.Root.MinSize.Height);
             }
         }
 
@@ -39,9 +40,36 @@ namespace lynxs.controls
             phone.TextLocation = Locations.Top;
             phone.Text = @"phone";
             phone.Control = phonebox;
+            parentResize();
 
             contactsGroup.EndUpdate();
-            parentResize();
+            
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm;
+            parentForm?.Close();
+        }
+
+        private void okBtn_Click(object sender, EventArgs e)
+        {
+            var stdcontacts = new BsonDocument
+            {
+                {"phonemain", phonemain.Text},
+                {"phoneadd", phoneadd.Text}
+            };
+
+            var stdoc = new BsonDocument
+            {
+                {"fname", fname.Text},
+                {"lname", lname.Text },
+                {"fullname", lname.Text + " " + fname.Text },
+                {"groupno", @group.Text },
+                {"contacts", stdcontacts }
+            };
+
+            db_actions.stdInsert(stdoc);
         }
     }
 }
