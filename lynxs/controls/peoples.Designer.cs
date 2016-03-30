@@ -36,6 +36,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.studentGrid = new DevExpress.XtraGrid.GridControl();
+            this.realTimeStudents = new DevExpress.Data.RealTimeSource();
             this.studentView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupGrid = new DevExpress.XtraGrid.GridControl();
             this.realTimeGroup = new DevExpress.Data.RealTimeSource();
@@ -53,7 +54,6 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.realTimeStudents = new DevExpress.Data.RealTimeSource();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentGrid)).BeginInit();
@@ -98,10 +98,10 @@
             // 
             this.labelControl6.Appearance.FontSizeDelta = 2;
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.labelControl6.Location = new System.Drawing.Point(432, 12);
+            this.labelControl6.Location = new System.Drawing.Point(451, 12);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Padding = new System.Windows.Forms.Padding(9, 0, 7, 5);
-            this.labelControl6.Size = new System.Drawing.Size(245, 22);
+            this.labelControl6.Size = new System.Drawing.Size(226, 22);
             this.labelControl6.StyleController = this.layoutControl1;
             this.labelControl6.TabIndex = 11;
             this.labelControl6.Text = "info";
@@ -113,7 +113,7 @@
             this.stdHeadLabel.Location = new System.Drawing.Point(194, 12);
             this.stdHeadLabel.Name = "stdHeadLabel";
             this.stdHeadLabel.Padding = new System.Windows.Forms.Padding(9, 0, 7, 5);
-            this.stdHeadLabel.Size = new System.Drawing.Size(222, 22);
+            this.stdHeadLabel.Size = new System.Drawing.Size(241, 22);
             this.stdHeadLabel.StyleController = this.layoutControl1;
             this.stdHeadLabel.TabIndex = 10;
             this.stdHeadLabel.Text = "students";
@@ -132,27 +132,27 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(528, 72);
+            this.labelControl3.Location = new System.Drawing.Point(547, 72);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(149, 13);
+            this.labelControl3.Size = new System.Drawing.Size(130, 13);
             this.labelControl3.StyleController = this.layoutControl1;
             this.labelControl3.TabIndex = 8;
             this.labelControl3.Text = "labelControl3";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(528, 55);
+            this.labelControl2.Location = new System.Drawing.Point(547, 55);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(149, 13);
+            this.labelControl2.Size = new System.Drawing.Size(130, 13);
             this.labelControl2.StyleController = this.layoutControl1;
             this.labelControl2.TabIndex = 7;
             this.labelControl2.Text = "labelControl2";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(528, 38);
+            this.labelControl1.Location = new System.Drawing.Point(547, 38);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(149, 13);
+            this.labelControl1.Size = new System.Drawing.Size(130, 13);
             this.labelControl1.StyleController = this.layoutControl1;
             this.labelControl1.TabIndex = 6;
             this.labelControl1.Text = "labelControl1";
@@ -163,15 +163,29 @@
             this.studentGrid.Location = new System.Drawing.Point(194, 38);
             this.studentGrid.MainView = this.studentView;
             this.studentGrid.Name = "studentGrid";
-            this.studentGrid.Size = new System.Drawing.Size(222, 348);
+            this.studentGrid.Size = new System.Drawing.Size(241, 348);
             this.studentGrid.TabIndex = 5;
             this.studentGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.studentView});
             // 
+            // realTimeStudents
+            // 
+            this.realTimeStudents.DisplayableProperties = null;
+            this.realTimeStudents.UseWeakEventHandler = true;
+            // 
             // studentView
             // 
+            this.studentView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None;
             this.studentView.GridControl = this.studentGrid;
             this.studentView.Name = "studentView";
+            this.studentView.OptionsBehavior.Editable = false;
+            this.studentView.OptionsFind.AlwaysVisible = true;
+            this.studentView.OptionsFind.FindDelay = 500;
+            this.studentView.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
+            this.studentView.OptionsFind.FindNullPrompt = "search em all...";
+            this.studentView.OptionsFind.ShowCloseButton = false;
+            this.studentView.OptionsFind.ShowFindButton = false;
+            this.studentView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.studentView.OptionsView.ShowColumnHeaders = false;
             this.studentView.OptionsView.ShowGroupPanel = false;
             this.studentView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
@@ -201,6 +215,7 @@
             this.groupView.Name = "groupView";
             this.groupView.OptionsBehavior.Editable = false;
             this.groupView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.groupView.OptionsSelection.MultiSelect = true;
             this.groupView.OptionsView.ShowColumnHeaders = false;
             this.groupView.OptionsView.ShowGroupPanel = false;
             this.groupView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
@@ -240,7 +255,7 @@
             // splitterItem2
             // 
             this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(408, 0);
+            this.splitterItem2.Location = new System.Drawing.Point(427, 0);
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(12, 378);
             // 
@@ -272,7 +287,7 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(182, 26);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(104, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(226, 352);
+            this.layoutControlItem2.Size = new System.Drawing.Size(245, 352);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -280,40 +295,40 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(420, 77);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(439, 77);
             this.emptySpaceItem1.MinSize = new System.Drawing.Size(104, 24);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(249, 301);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(230, 301);
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.labelControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(420, 26);
+            this.layoutControlItem3.Location = new System.Drawing.Point(439, 26);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(163, 17);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(249, 17);
+            this.layoutControlItem3.Size = new System.Drawing.Size(230, 17);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.labelControl2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(420, 43);
+            this.layoutControlItem4.Location = new System.Drawing.Point(439, 43);
             this.layoutControlItem4.MinSize = new System.Drawing.Size(163, 17);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(249, 17);
+            this.layoutControlItem4.Size = new System.Drawing.Size(230, 17);
             this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.labelControl3;
-            this.layoutControlItem5.Location = new System.Drawing.Point(420, 60);
+            this.layoutControlItem5.Location = new System.Drawing.Point(439, 60);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(163, 17);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(249, 17);
+            this.layoutControlItem5.Size = new System.Drawing.Size(230, 17);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -334,7 +349,7 @@
             this.layoutControlItem7.Location = new System.Drawing.Point(182, 0);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(73, 26);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(226, 26);
+            this.layoutControlItem7.Size = new System.Drawing.Size(245, 26);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
@@ -342,18 +357,13 @@
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.labelControl6;
-            this.layoutControlItem8.Location = new System.Drawing.Point(420, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(439, 0);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(42, 26);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(249, 26);
+            this.layoutControlItem8.Size = new System.Drawing.Size(230, 26);
             this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
-            // 
-            // realTimeStudents
-            // 
-            this.realTimeStudents.DisplayableProperties = null;
-            this.realTimeStudents.UseWeakEventHandler = true;
             // 
             // peoples
             // 

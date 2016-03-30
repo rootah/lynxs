@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using DevExpress.XtraGrid.Views.Base;
 using lynxs.classes;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -7,11 +8,13 @@ namespace lynxs.controls
 {
     public partial class peoples : DevExpress.XtraEditors.XtraUserControl
     {
-        public peoples(){
+        public peoples()
+        {
             InitializeComponent();
+            
         }
 
-        private void stdFullGridFill()
+        public void stdFullGridFill()
         {
             var stable = db_actions.stdFullList();
             
@@ -27,17 +30,17 @@ namespace lynxs.controls
             realTimeStudents.DataSource = stable;
             studentView.PopulateColumns();
         }
-        private void groupView_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        public void groupView_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             if (groupView.GetFocusedRow() == null) return;
             var selectedgroupno = groupView.GetRowCellValue(groupView.FocusedRowHandle, "num").ToString();
             if (selectedgroupno == "All")
             {
-                stdHeadLabel.Text = @"Students All";
+                stdHeadLabel.Text = @"students All";
                 stdFullGridFill();}
             else
             {
-                stdHeadLabel.Text = @"Students " + selectedgroupno;
+                stdHeadLabel.Text = @"students " + selectedgroupno;
 
                 stdGridFill(selectedgroupno);
             }
