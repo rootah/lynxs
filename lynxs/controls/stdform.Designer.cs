@@ -77,6 +77,9 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.stdid = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
             this.popupControlContainer1.SuspendLayout();
@@ -115,6 +118,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -191,7 +197,7 @@
             // 
             this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.popupControlContainer1.Controls.Add(this.seclayout);
-            this.popupControlContainer1.Location = new System.Drawing.Point(64, 94);
+            this.popupControlContainer1.Location = new System.Drawing.Point(16, 204);
             this.popupControlContainer1.Manager = this.barManager1;
             this.popupControlContainer1.Name = "popupControlContainer1";
             this.popupControlContainer1.Size = new System.Drawing.Size(250, 130);
@@ -364,6 +370,7 @@
             // 
             // mainlayout
             // 
+            this.mainlayout.Controls.Add(this.stdid);
             this.mainlayout.Controls.Add(this.popupControlContainer1);
             this.mainlayout.Controls.Add(this.addcontact);
             this.mainlayout.Controls.Add(this.group);
@@ -387,55 +394,55 @@
             // 
             this.addcontact.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Show;
             this.addcontact.DropDownControl = this.popupMenu1;
-            this.addcontact.Location = new System.Drawing.Point(196, 132);
+            this.addcontact.Location = new System.Drawing.Point(182, 132);
             this.addcontact.Name = "addcontact";
             this.addcontact.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.addcontact.Size = new System.Drawing.Size(242, 22);
+            this.addcontact.Size = new System.Drawing.Size(256, 22);
             this.addcontact.StyleController = this.mainlayout;
-            this.addcontact.TabIndex = 4;
+            this.addcontact.TabIndex = 3;
             this.addcontact.Text = "add contact";
             // 
             // group
             // 
-            this.group.Location = new System.Drawing.Point(12, 108);
+            this.group.Location = new System.Drawing.Point(12, 146);
             this.group.Name = "group";
             this.group.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.group.Size = new System.Drawing.Size(160, 20);
+            this.group.Size = new System.Drawing.Size(146, 20);
             this.group.StyleController = this.mainlayout;
             this.group.TabIndex = 6;
             // 
             // phoneadd
             // 
-            this.phoneadd.Location = new System.Drawing.Point(196, 103);
+            this.phoneadd.Location = new System.Drawing.Point(182, 103);
             this.phoneadd.Name = "phoneadd";
-            this.phoneadd.Size = new System.Drawing.Size(242, 20);
+            this.phoneadd.Size = new System.Drawing.Size(256, 20);
             this.phoneadd.StyleController = this.mainlayout;
-            this.phoneadd.TabIndex = 3;
+            this.phoneadd.TabIndex = 2;
             // 
             // phonemain
             // 
-            this.phonemain.Location = new System.Drawing.Point(196, 63);
+            this.phonemain.Location = new System.Drawing.Point(182, 63);
             this.phonemain.Name = "phonemain";
-            this.phonemain.Size = new System.Drawing.Size(242, 20);
+            this.phonemain.Size = new System.Drawing.Size(256, 20);
             this.phonemain.StyleController = this.mainlayout;
-            this.phonemain.TabIndex = 2;
+            this.phonemain.TabIndex = 0;
             // 
             // lname
             // 
-            this.lname.Location = new System.Drawing.Point(12, 68);
+            this.lname.Location = new System.Drawing.Point(12, 106);
             this.lname.Name = "lname";
-            this.lname.Size = new System.Drawing.Size(160, 20);
+            this.lname.Size = new System.Drawing.Size(146, 20);
             this.lname.StyleController = this.mainlayout;
             this.lname.TabIndex = 5;
             // 
             // fname
             // 
-            this.fname.Location = new System.Drawing.Point(12, 28);
+            this.fname.Location = new System.Drawing.Point(12, 66);
             this.fname.Name = "fname";
-            this.fname.Size = new System.Drawing.Size(160, 20);
+            this.fname.Size = new System.Drawing.Size(146, 20);
             this.fname.StyleController = this.mainlayout;
-            this.fname.TabIndex = 0;
+            this.fname.TabIndex = 4;
             // 
             // okBtn
             // 
@@ -462,7 +469,9 @@
             this.layoutControlItem7,
             this.emptySpaceItem1,
             this.emptySpaceItem2,
-            this.emptySpaceItem3});
+            this.emptySpaceItem3,
+            this.emptySpaceItem6,
+            this.layoutControlItem13});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(462, 262);
@@ -471,9 +480,9 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.fname;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 38);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(164, 40);
+            this.layoutControlItem1.Size = new System.Drawing.Size(150, 40);
             this.layoutControlItem1.Text = " first name";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(62, 13);
@@ -481,20 +490,20 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.lname;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 40);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 78);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(164, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(150, 40);
             this.layoutControlItem2.Text = " last name";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(62, 13);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(164, 0);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(150, 0);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.SelectedTabPage = this.contactstab;
             this.tabbedControlGroup1.SelectedTabPageIndex = 0;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(278, 158);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(292, 168);
             this.tabbedControlGroup1.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 2, 2, 2);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.contactstab});
@@ -507,7 +516,7 @@
             this.contactsGroup});
             this.contactstab.Location = new System.Drawing.Point(0, 0);
             this.contactstab.Name = "contactstab";
-            this.contactstab.Size = new System.Drawing.Size(246, 111);
+            this.contactstab.Size = new System.Drawing.Size(260, 121);
             this.contactstab.Text = "contacts";
             // 
             // layoutControlGroup5
@@ -517,14 +526,14 @@
             this.layoutControlItem9});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 80);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(246, 31);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(260, 41);
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.addcontact;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(246, 31);
+            this.layoutControlItem9.Size = new System.Drawing.Size(260, 41);
             this.layoutControlItem9.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 5, 0);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
@@ -537,14 +546,14 @@
             this.layoutControlItem4});
             this.contactsGroup.Location = new System.Drawing.Point(0, 0);
             this.contactsGroup.Name = "contactsGroup";
-            this.contactsGroup.Size = new System.Drawing.Size(246, 80);
+            this.contactsGroup.Size = new System.Drawing.Size(260, 80);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.phoneadd;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 40);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(246, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(260, 40);
             this.layoutControlItem3.Text = "phone add.";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(62, 13);
@@ -554,7 +563,7 @@
             this.layoutControlItem4.Control = this.phonemain;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(246, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(260, 40);
             this.layoutControlItem4.Text = "phone main";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(62, 13);
@@ -562,9 +571,9 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.group;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 80);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 118);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(164, 78);
+            this.layoutControlItem5.Size = new System.Drawing.Size(150, 40);
             this.layoutControlItem5.Text = " to / in group";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(62, 13);
@@ -623,13 +632,43 @@
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 158);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 168);
             this.emptySpaceItem3.MaxSize = new System.Drawing.Size(442, 0);
             this.emptySpaceItem3.MinSize = new System.Drawing.Size(442, 10);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(442, 57);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(442, 47);
             this.emptySpaceItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem6
+            // 
+            this.emptySpaceItem6.AllowHotTrack = false;
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 158);
+            this.emptySpaceItem6.Name = "emptySpaceItem6";
+            this.emptySpaceItem6.Size = new System.Drawing.Size(150, 10);
+            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // stdid
+            // 
+            this.stdid.EditValue = "..";
+            this.stdid.Location = new System.Drawing.Point(12, 28);
+            this.stdid.MenuManager = this.barManager1;
+            this.stdid.Name = "stdid";
+            this.stdid.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.stdid.Size = new System.Drawing.Size(146, 18);
+            this.stdid.StyleController = this.mainlayout;
+            this.stdid.TabIndex = 9;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.stdid;
+            this.layoutControlItem13.Enabled = false;
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(150, 38);
+            this.layoutControlItem13.Text = " std ID";
+            this.layoutControlItem13.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(62, 13);
             // 
             // stdform
             // 
@@ -680,6 +719,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -734,5 +776,8 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraEditors.TextEdit stdid;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
     }
 }

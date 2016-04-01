@@ -3,6 +3,8 @@ using System.Drawing;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
 using lynxs.classes;
+using lynxs.Properties;
+using MongoDB.Driver;
 using MongoDB.Bson;
 
 namespace lynxs.controls
@@ -13,8 +15,20 @@ namespace lynxs.controls
         {
             InitializeComponent();
             groupFill();
+            fakeGen();
+
+            /*
+             *      UNDONE add fakegen to another contacts (email, skype etc.)
+             */
         }
 
+        private void fakeGen()
+        {
+            fname.Text = Faker.Name.First();
+            lname.Text = Faker.Name.Last();
+            phonemain.Text = Faker.Phone.CellNumber();
+            phoneadd.Text = Faker.Phone.CellNumber();
+            stdid.Text = ObjectId.GenerateNewId().ToString();}
         private async void groupFill()
         {
             @group.Properties.Items.Clear();

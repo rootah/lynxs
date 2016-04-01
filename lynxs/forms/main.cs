@@ -37,28 +37,30 @@ namespace lynxs.forms
             newstd.Controls.Add(frm);
             newstd.Controls[0].Dock = DockStyle.Fill;
             newstd.ClientSize = new Size(frm.mainlayout.Root.MinSize.Width, frm.mainlayout.Root.MinSize.Height);
-            newstd.Show(this);
+            newstd.StartPosition = FormStartPosition.CenterParent;
+            newstd.ShowDialog(this);
         }
 
         private void startNewGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             var grp = new groupform();
-            var newstd = new XtraForm
+            var newgroup = new XtraForm
             {
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
                 MinimizeBox = false,
 
             };
-            newstd.Controls.Add(grp);
-            newstd.Controls[0].Dock = DockStyle.Fill;
-            newstd.ClientSize = new Size(grp.layoutControl1.Root.MinSize.Width, grp.layoutControl1.Root.MinSize.Height);
-            newstd.Show(this);
+            newgroup.Controls.Add(grp);
+            newgroup.Controls[0].Dock = DockStyle.Fill;
+            newgroup.ClientSize = new Size(grp.layoutControl1.Root.MinSize.Width, grp.layoutControl1.Root.MinSize.Height);
+            newgroup.StartPosition = FormStartPosition.CenterParent;
+            newgroup.ShowDialog(this);
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //groupFullFill();
-        }
+            var id = peoples1.studentView.GetRowCellValue(peoples1.studentView.FocusedRowHandle, "_id").ToString();
+            MessageBox.Show(id);}
     }
 }

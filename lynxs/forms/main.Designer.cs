@@ -42,7 +42,6 @@ namespace lynxs.forms
             this.startNewGroup = new DevExpress.XtraBars.BarButtonItem();
             this.startNewStd = new DevExpress.XtraBars.BarButtonItem();
             this.startNewIncome = new DevExpress.XtraBars.BarButtonItem();
-            this.statusLabel = new DevExpress.XtraBars.BarStaticItem();
             this.startEditBtn = new DevExpress.XtraBars.BarButtonItem();
             this.startDelBtn = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -78,12 +77,11 @@ namespace lynxs.forms
             this.startNewGroup,
             this.startNewStd,
             this.startNewIncome,
-            this.statusLabel,
             this.startEditBtn,
             this.startDelBtn,
             this.barButtonItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 10;
+            this.ribbon.MaxItemId = 15;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageAnimationLength = 0;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -153,13 +151,6 @@ namespace lynxs.forms
             this.startNewIncome.Id = 4;
             this.startNewIncome.Name = "startNewIncome";
             // 
-            // statusLabel
-            // 
-            this.statusLabel.Caption = "...";
-            this.statusLabel.Id = 5;
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
             // startEditBtn
             // 
             this.startEditBtn.Caption = "edit";
@@ -176,7 +167,7 @@ namespace lynxs.forms
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "fill";
+            this.barButtonItem1.Caption = "get ID";
             this.barButtonItem1.Id = 9;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
@@ -204,7 +195,8 @@ namespace lynxs.forms
             // 
             // ribbonStatus
             // 
-            this.ribbonStatus.ItemLinks.Add(this.statusLabel);
+            this.ribbonStatus.AutoHeight = true;
+            this.ribbonStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ribbonStatus.Location = new System.Drawing.Point(0, 481);
             this.ribbonStatus.Name = "ribbonStatus";
             this.ribbonStatus.Ribbon = this.ribbon;
@@ -285,9 +277,9 @@ namespace lynxs.forms
             this.Controls.Add(this.customBackstage);
             this.Controls.Add(this.ribbonStatus);
             this.Controls.Add(this.ribbon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
             this.Ribbon = this.ribbon;
-            this.ShowIcon = false;
             this.StatusBar = this.ribbonStatus;
             this.Text = "lynx.s 0x1";
             this.Load += new System.EventHandler(this.main_Load);
@@ -326,7 +318,6 @@ namespace lynxs.forms
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem navPayments;
         private payments payments1;
         private peoples peoples1;
-        private DevExpress.XtraBars.BarStaticItem statusLabel;
         private DevExpress.XtraBars.BarButtonItem startEditBtn;
         private DevExpress.XtraBars.BarButtonItem startDelBtn;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;

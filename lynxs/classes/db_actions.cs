@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using DevExpress.XtraPrinting.Native;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using lynxs.classes;
@@ -42,20 +43,37 @@ namespace lynxs.classes
             return grouplist;
         }
 
+        public static async Task<List<string>> stdDetail(string id)
+        {
+            var detail = new List<string>();
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", id);
+            var cursor = _stdcollection.Find(filter).ToCursor();
+            
+            // UNDONE URGENT!!!
+
+            //foreach (var document in cursor.ToEnumerable())
+            //{
+            //    detail.Add(document["_id"].ToString(), document["fullname"].ToString());
+            //}
+
+            return detail;
+        }
+
         public static DataTable stdlist(string groupno)
         {
             var stable = new DataTable();
             
             stable.BeginInit();
+            stable.Columns.Add("_id", typeof (string));
             stable.Columns.Add("name", typeof(string));
 
             var filter = Builders<BsonDocument>.Filter.Eq("groupno", groupno);
-            var projection = Builders<BsonDocument>.Projection.Exclude("_id").Include("fullname");
+            var projection = Builders<BsonDocument>.Projection.Include("_id").Include("fullname");
             var sort = Builders<BsonDocument>.Sort.Ascending("lname");
             var cursor = _stdcollection.Find(filter).Project(projection).Sort(sort).ToCursor();
             foreach (var document in cursor.ToEnumerable())
             {
-                stable.Rows.Add(document.Values.Single().ToString());
+                stable.Rows.Add(document["_id"].ToString(), document["fullname"].ToString());
             }
             stable.EndInit();
 
@@ -65,14 +83,15 @@ namespace lynxs.classes
         {
             var stable = new DataTable();
             stable.BeginInit();
+            stable.Columns.Add("_id", typeof(string));
             stable.Columns.Add("name", typeof(string));
 
-            var projection = Builders<BsonDocument>.Projection.Exclude("_id").Include("fullname");
+            var projection = Builders<BsonDocument>.Projection.Include("_id").Include("fullname");
             var sort = Builders<BsonDocument>.Sort.Ascending("lname");
             var cursor = _stdcollection.Find(new BsonDocument()).Project(projection).Sort(sort).ToCursor();
             foreach (var document in cursor.ToEnumerable())
             {
-                stable.Rows.Add(document.Values.Single().ToString());
+                stable.Rows.Add(document["_id"].ToString(), document["fullname"].ToString());
             }
             stable.EndInit();
 
