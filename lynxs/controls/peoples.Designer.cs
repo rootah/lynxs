@@ -215,7 +215,6 @@
             this.groupView.Name = "groupView";
             this.groupView.OptionsBehavior.Editable = false;
             this.groupView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.groupView.OptionsSelection.MultiSelect = true;
             this.groupView.OptionsView.ShowColumnHeaders = false;
             this.groupView.OptionsView.ShowGroupPanel = false;
             this.groupView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
@@ -403,7 +402,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl studentGrid;
-        private DevExpress.XtraGrid.GridControl groupGrid;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
         private DevExpress.XtraLayout.SplitterItem splitterItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
@@ -423,5 +421,6 @@
         public DevExpress.Data.RealTimeSource realTimeStudents;
         public DevExpress.XtraGrid.Views.Grid.GridView studentView;
         public DevExpress.XtraGrid.Views.Grid.GridView groupView;
+        public DevExpress.XtraGrid.GridControl groupGrid;
     }
 }

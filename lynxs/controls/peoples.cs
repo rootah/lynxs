@@ -1,8 +1,4 @@
-﻿using System.Data;
-using DevExpress.XtraGrid.Views.Base;
-using lynxs.classes;
-using MongoDB.Bson;
-using MongoDB.Driver;
+﻿using lynxs.classes;
 
 namespace lynxs.controls
 {
@@ -11,21 +7,29 @@ namespace lynxs.controls
         public peoples()
         {
             InitializeComponent();
-            
         }
 
+        public async void groupFullFill()
+        {
+            var groupTable = await db_actions.groupList();
+            
+            realTimeGroup.DataSource = groupTable;
+            groupView.PopulateColumns();
+            
+            groupView.FocusedRowHandle = groupView.GetVisibleRowHandle(0);
+            stdFullGridFill();
+        }
         public void stdFullGridFill()
         {
-            var stable = db_actions.stdFullList();
+            var stdtable = db_actions.stdFullList();
             
-            realTimeStudents.DataSource = null;
-            realTimeStudents.DataSource = stable;
+            realTimeStudents.DataSource = stdtable;
             studentView.PopulateColumns();
         }
 
         private void stdGridFill(string groupno)
         {
-            var stable = db_actions.stdlist(groupno);
+            var stable = db_actions.stdlist(groupno);           
             realTimeStudents.DataSource = null;
             realTimeStudents.DataSource = stable;
             studentView.PopulateColumns();
@@ -33,17 +37,24 @@ namespace lynxs.controls
         public void groupView_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             if (groupView.GetFocusedRow() == null) return;
-            var selectedgroupno = groupView.GetRowCellValue(groupView.FocusedRowHandle, "num").ToString();
-            if (selectedgroupno == "All")
+            try
             {
-                stdHeadLabel.Text = @"students All";
-                stdFullGridFill();}
-            else
-            {
-                stdHeadLabel.Text = @"students " + selectedgroupno;
+                var selectedgroupno = groupView.GetRowCellValue(groupView.FocusedRowHandle, "num").ToString();
+                if (selectedgroupno == "All")
+                {
+                    stdHeadLabel.Text = @"students All";
+                    stdFullGridFill();
+                }
+                else
+                {
+                    stdHeadLabel.Text = @"students " + selectedgroupno;
 
-                stdGridFill(selectedgroupno);
+                    stdGridFill(selectedgroupno);
+                }
             }
+            catch
+            { return; }
+            
         }
     }
 }

@@ -35,7 +35,7 @@ namespace lynxs.forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.formAss = new DevExpress.XtraBars.FormAssistant();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.customBackstage = new CustomBackstageViewControl();
+            this.customBackstage = new lynxs.customcontrols.CustomBackstageViewControl();
             this.backstageStop = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.startNewPop = new DevExpress.XtraBars.BarButtonItem();
             this.newPop = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -45,6 +45,7 @@ namespace lynxs.forms
             this.statusLabel = new DevExpress.XtraBars.BarStaticItem();
             this.startEditBtn = new DevExpress.XtraBars.BarButtonItem();
             this.startDelBtn = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonStart = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStartGroupOne = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonMoneys = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -79,9 +80,10 @@ namespace lynxs.forms
             this.startNewIncome,
             this.statusLabel,
             this.startEditBtn,
-            this.startDelBtn});
+            this.startDelBtn,
+            this.barButtonItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 9;
+            this.ribbon.MaxItemId = 10;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageAnimationLength = 0;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -91,7 +93,7 @@ namespace lynxs.forms
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
             this.ribbon.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbon.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbon.Size = new System.Drawing.Size(1385, 83);
+            this.ribbon.Size = new System.Drawing.Size(1274, 83);
             this.ribbon.StatusBar = this.ribbonStatus;
             // 
             // customBackstage
@@ -172,6 +174,13 @@ namespace lynxs.forms
             this.startDelBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("startDelBtn.LargeGlyph")));
             this.startDelBtn.Name = "startDelBtn";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "fill";
+            this.barButtonItem1.Id = 9;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // ribbonStart
             // 
             this.ribbonStart.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -184,6 +193,7 @@ namespace lynxs.forms
             this.ribbonStartGroupOne.ItemLinks.Add(this.startNewPop);
             this.ribbonStartGroupOne.ItemLinks.Add(this.startEditBtn, true);
             this.ribbonStartGroupOne.ItemLinks.Add(this.startDelBtn);
+            this.ribbonStartGroupOne.ItemLinks.Add(this.barButtonItem1);
             this.ribbonStartGroupOne.Name = "ribbonStartGroupOne";
             this.ribbonStartGroupOne.Text = "ribbonPageGroup1";
             // 
@@ -195,10 +205,10 @@ namespace lynxs.forms
             // ribbonStatus
             // 
             this.ribbonStatus.ItemLinks.Add(this.statusLabel);
-            this.ribbonStatus.Location = new System.Drawing.Point(0, 505);
+            this.ribbonStatus.Location = new System.Drawing.Point(0, 481);
             this.ribbonStatus.Name = "ribbonStatus";
             this.ribbonStatus.Ribbon = this.ribbon;
-            this.ribbonStatus.Size = new System.Drawing.Size(1385, 21);
+            this.ribbonStatus.Size = new System.Drawing.Size(1274, 21);
             // 
             // defaultLook
             // 
@@ -216,7 +226,7 @@ namespace lynxs.forms
             this.backstageMain.Name = "backstageMain";
             this.backstageMain.SelectedTab = this.navGroups;
             this.backstageMain.SelectedTabIndex = 0;
-            this.backstageMain.Size = new System.Drawing.Size(1385, 422);
+            this.backstageMain.Size = new System.Drawing.Size(1274, 398);
             this.backstageMain.TabIndex = 10;
             this.backstageMain.Text = "backstageViewControl1";
             // 
@@ -225,7 +235,7 @@ namespace lynxs.forms
             this.navGroupsClient.Controls.Add(this.peoples1);
             this.navGroupsClient.Location = new System.Drawing.Point(158, 0);
             this.navGroupsClient.Name = "navGroupsClient";
-            this.navGroupsClient.Size = new System.Drawing.Size(1227, 422);
+            this.navGroupsClient.Size = new System.Drawing.Size(1116, 398);
             this.navGroupsClient.TabIndex = 1;
             // 
             // peoples1
@@ -233,7 +243,7 @@ namespace lynxs.forms
             this.peoples1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.peoples1.Location = new System.Drawing.Point(0, 0);
             this.peoples1.Name = "peoples1";
-            this.peoples1.Size = new System.Drawing.Size(1227, 422);
+            this.peoples1.Size = new System.Drawing.Size(1116, 398);
             this.peoples1.TabIndex = 0;
             // 
             // navPaymentsClient
@@ -241,7 +251,7 @@ namespace lynxs.forms
             this.navPaymentsClient.Controls.Add(this.payments1);
             this.navPaymentsClient.Location = new System.Drawing.Point(158, 0);
             this.navPaymentsClient.Name = "navPaymentsClient";
-            this.navPaymentsClient.Size = new System.Drawing.Size(1227, 422);
+            this.navPaymentsClient.Size = new System.Drawing.Size(1116, 398);
             this.navPaymentsClient.TabIndex = 2;
             // 
             // payments1
@@ -249,7 +259,7 @@ namespace lynxs.forms
             this.payments1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.payments1.Location = new System.Drawing.Point(0, 0);
             this.payments1.Name = "payments1";
-            this.payments1.Size = new System.Drawing.Size(1227, 422);
+            this.payments1.Size = new System.Drawing.Size(1116, 398);
             this.payments1.TabIndex = 0;
             // 
             // navGroups
@@ -270,7 +280,7 @@ namespace lynxs.forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1385, 526);
+            this.ClientSize = new System.Drawing.Size(1274, 502);
             this.Controls.Add(this.backstageMain);
             this.Controls.Add(this.customBackstage);
             this.Controls.Add(this.ribbonStatus);
@@ -319,6 +329,7 @@ namespace lynxs.forms
         private DevExpress.XtraBars.BarStaticItem statusLabel;
         private DevExpress.XtraBars.BarButtonItem startEditBtn;
         private DevExpress.XtraBars.BarButtonItem startDelBtn;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 
