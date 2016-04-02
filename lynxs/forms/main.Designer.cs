@@ -44,7 +44,6 @@ namespace lynxs.forms
             this.startNewIncome = new DevExpress.XtraBars.BarButtonItem();
             this.startEditBtn = new DevExpress.XtraBars.BarButtonItem();
             this.startDelBtn = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonStart = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStartGroupOne = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonMoneys = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -78,8 +77,7 @@ namespace lynxs.forms
             this.startNewStd,
             this.startNewIncome,
             this.startEditBtn,
-            this.startDelBtn,
-            this.barButtonItem1});
+            this.startDelBtn});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 15;
             this.ribbon.Name = "ribbon";
@@ -156,6 +154,7 @@ namespace lynxs.forms
             this.startEditBtn.Caption = "edit";
             this.startEditBtn.Id = 7;
             this.startEditBtn.Name = "startEditBtn";
+            this.startEditBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startEditBtn_ItemClick);
             // 
             // startDelBtn
             // 
@@ -164,13 +163,6 @@ namespace lynxs.forms
             this.startDelBtn.Id = 8;
             this.startDelBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("startDelBtn.LargeGlyph")));
             this.startDelBtn.Name = "startDelBtn";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "get ID";
-            this.barButtonItem1.Id = 9;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // ribbonStart
             // 
@@ -184,7 +176,6 @@ namespace lynxs.forms
             this.ribbonStartGroupOne.ItemLinks.Add(this.startNewPop);
             this.ribbonStartGroupOne.ItemLinks.Add(this.startEditBtn, true);
             this.ribbonStartGroupOne.ItemLinks.Add(this.startDelBtn);
-            this.ribbonStartGroupOne.ItemLinks.Add(this.barButtonItem1);
             this.ribbonStartGroupOne.Name = "ribbonStartGroupOne";
             this.ribbonStartGroupOne.Text = "ribbonPageGroup1";
             // 
@@ -318,9 +309,8 @@ namespace lynxs.forms
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem navPayments;
         private payments payments1;
         private peoples peoples1;
-        private DevExpress.XtraBars.BarButtonItem startEditBtn;
         private DevExpress.XtraBars.BarButtonItem startDelBtn;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        public DevExpress.XtraBars.BarButtonItem startEditBtn;
     }
 }
 

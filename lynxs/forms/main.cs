@@ -58,9 +58,14 @@ namespace lynxs.forms
             newgroup.ShowDialog(this);
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void startEditBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var id = peoples1.studentView.GetRowCellValue(peoples1.studentView.FocusedRowHandle, "_id").ToString();
-            MessageBox.Show(id);}
+            // todo edit form fill
+            if (peoples1.studentView.IsFocusedView)
+                    MessageBox.Show("stds");
+                else if (peoples1.groupView.IsFocusedView)
+                    MessageBox.Show("grps");
+                else MessageBox.Show("none");
+        }
     }
 }

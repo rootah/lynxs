@@ -54,6 +54,7 @@
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.cancelBtn = new DevExpress.XtraEditors.SimpleButton();
             this.mainlayout = new DevExpress.XtraLayout.LayoutControl();
+            this.stdid = new DevExpress.XtraEditors.TextEdit();
             this.addcontact = new DevExpress.XtraEditors.DropDownButton();
             this.group = new DevExpress.XtraEditors.ComboBoxEdit();
             this.phoneadd = new DevExpress.XtraEditors.TextEdit();
@@ -78,7 +79,6 @@
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.stdid = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
@@ -97,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainlayout)).BeginInit();
             this.mainlayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.group.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneadd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonemain.Properties)).BeginInit();
@@ -119,7 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             this.SuspendLayout();
             // 
@@ -390,6 +390,17 @@
             this.mainlayout.TabIndex = 0;
             this.mainlayout.Text = "layoutControl1";
             // 
+            // stdid
+            // 
+            this.stdid.EditValue = "..";
+            this.stdid.Location = new System.Drawing.Point(12, 28);
+            this.stdid.MenuManager = this.barManager1;
+            this.stdid.Name = "stdid";
+            this.stdid.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.stdid.Size = new System.Drawing.Size(146, 18);
+            this.stdid.StyleController = this.mainlayout;
+            this.stdid.TabIndex = 9;
+            // 
             // addcontact
             // 
             this.addcontact.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Show;
@@ -648,17 +659,6 @@
             this.emptySpaceItem6.Size = new System.Drawing.Size(150, 10);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // stdid
-            // 
-            this.stdid.EditValue = "..";
-            this.stdid.Location = new System.Drawing.Point(12, 28);
-            this.stdid.MenuManager = this.barManager1;
-            this.stdid.Name = "stdid";
-            this.stdid.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.stdid.Size = new System.Drawing.Size(146, 18);
-            this.stdid.StyleController = this.mainlayout;
-            this.stdid.TabIndex = 9;
-            // 
             // layoutControlItem13
             // 
             this.layoutControlItem13.Control = this.stdid;
@@ -698,6 +698,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainlayout)).EndInit();
             this.mainlayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.group.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneadd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonemain.Properties)).EndInit();
@@ -720,7 +721,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stdid.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

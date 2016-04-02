@@ -186,7 +186,7 @@
             // 
             // navCommonTab
             // 
-            this.navCommonTab.Caption = "payments / common";
+            this.navCommonTab.Caption = "payments / total";
             this.navCommonTab.ControlContainer = this.navBarGroupControlContainer1;
             this.navCommonTab.Expanded = true;
             this.navCommonTab.GroupClientHeight = 218;
@@ -438,7 +438,7 @@
             // 
             // navTargetTab
             // 
-            this.navTargetTab.Caption = "payments / focused";
+            this.navTargetTab.Caption = "payments / personal";
             this.navTargetTab.ControlContainer = this.navBarGroupControlContainer2;
             this.navTargetTab.GroupClientHeight = 150;
             this.navTargetTab.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;

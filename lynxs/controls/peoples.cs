@@ -1,5 +1,12 @@
 ﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using DevExpress.XtraLayout;
+using DevExpress.Utils;
+using DevExpress.XtraEditors;
 using lynxs.classes;
+using lynxs.forms;
+using MongoDB.Bson;
 
 namespace lynxs.controls
 {
@@ -65,12 +72,11 @@ namespace lynxs.controls
             {
                 var id = studentView.GetRowCellValue(studentView.FocusedRowHandle, "_id").ToString();
                 var detail = await db_actions.stdDetail(id);
-                foreach (string item in detail)
-                {
-                    fnamelabel.Text = item[0].ToString();
-                    lnamelabel.Text = item[1].ToString();
-                    idlabel.Text = item[2].ToString();
-                }
+                var x = detail["contacts"].AsBsonDocument;
+                
+                infoheader.Text = (string)detail["fullname"];
+                phonemain.Text = (string) x["phonemain"];
+                phoneadd.Text = (string) x["phoneadd"];
             }
             catch
             { }

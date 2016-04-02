@@ -143,7 +143,6 @@
             this.simpleButton1.Size = new System.Drawing.Size(66, 23);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 5;
-            this.simpleButton1.Text = "OK";
             // 
             // simpleButton2
             // 

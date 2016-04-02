@@ -43,22 +43,24 @@ namespace lynxs.classes
             return grouplist;
         }
 
-        public static async Task<List<string>> stdDetail(string id)
+        public static async Task<BsonDocument> stdDetail(string id)
         {
-            var detail = new List<string>();
-            var filter = Builders<BsonDocument>.Filter.Eq("_id", id);
-            var cursor = _stdcollection.Find(filter).ToCursor();
-            
-            // UNDONE URGENT!!!
-
-            //foreach (var document in cursor.ToEnumerable())
-            //{
-            //    detail.Add(document["_id"].ToString(), document["fullname"].ToString());
-            //}
-
-            return detail;
+            var stdid = ObjectId.Parse(id);
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", stdid);
+            var document = await _stdcollection.Find(filter).FirstAsync();
+            return document;
         }
 
+        public static async Task<BsonDocument> stdContacts(string id)
+        {
+            var stdid = ObjectId.Parse(id);
+            //var queryString = Query.EQ("Athlete.Id", "123456789101112131415161");
+            //var resultBsons = collection.Find(queryString).ToList();
+
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", stdid);
+            var document = await _stdcollection.Find(filter).FirstAsync();
+            return document;
+        }
         public static DataTable stdlist(string groupno)
         {
             var stable = new DataTable();
