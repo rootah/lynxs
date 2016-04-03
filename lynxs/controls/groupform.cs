@@ -16,6 +16,7 @@ namespace lynxs.controls
         public groupform()
         {
             InitializeComponent();
+            // todo group auto num
         }
     }
 }

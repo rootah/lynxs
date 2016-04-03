@@ -85,5 +85,13 @@ namespace lynxs.controls
 
             db_actions.stdInsert(stdoc);
         }
+
+        private void checkButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkButton1.Checked)
+                groupFeeDate.Enabled = true;
+            else groupFeeDate.Enabled = false;
+
+        }
     }
 }
