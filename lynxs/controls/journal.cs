@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace lynxs.controls
 {
-    public partial class groupform : DevExpress.XtraEditors.XtraUserControl
+    public partial class journal : DevExpress.XtraEditors.XtraUserControl
     {
-        public groupform()
+        public journal()
         {
             InitializeComponent();
         }

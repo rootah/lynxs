@@ -32,7 +32,7 @@ namespace lynxs.controls
         private async void groupFill()
         {
             @group.Properties.Items.Clear();
-            group.Properties.Items.AddRange(await db_actions.groupComboFill());
+            group.Properties.Items.AddRange(await dbActions.groupComboFill());
         }
 
         private void parentResize()
@@ -83,7 +83,7 @@ namespace lynxs.controls
                 {"contacts", stdcontacts }
             };
 
-            db_actions.stdInsert(stdoc);
+            dbActions.stdInsert(stdoc);
         }
 
         private void checkButton1_CheckedChanged(object sender, EventArgs e)

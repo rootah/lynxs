@@ -1,24 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
-using DevExpress.XtraPrinting.Native;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using lynxs.classes;
 
 namespace lynxs.classes
 {
-    internal class db_actions
+    internal class dbActions
     {
         private static IMongoClient _client;
         private static IMongoDatabase _database;
         private static IMongoCollection<BsonDocument> _groupcollection;
         private static IMongoCollection<BsonDocument> _stdcollection;
 
+        public static int groupNo()
+        {
+            var projection = Builders<BsonDocument>.Projection.Exclude("_id").Include("groupno");
+            var sort = Builders<BsonDocument>.Sort.Descending("groupno");
+            var eq = _groupcollection.Find(new BsonDocument()).Project(projection).Sort(sort).First();
+            var i = eq["groupno"].AsBsonValue.ToInt32();
+            return i;
+        }
         private static void mongoInit()
         {
             _client = new MongoClient();

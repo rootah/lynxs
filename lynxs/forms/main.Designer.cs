@@ -51,11 +51,19 @@ namespace lynxs.forms
             this.defaultLook = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.backstageMain = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.navGroupsClient = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.peoples1 = new lynxs.controls.peoples();
+            this.peoplesCtrl = new lynxs.controls.peoples();
             this.navPaymentsClient = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.payments1 = new lynxs.controls.payments();
+            this.paymentsCtrl = new lynxs.controls.payments();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem4 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.navGroups = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.navPayments = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.journal1 = new lynxs.controls.journal();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customBackstage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newPop)).BeginInit();
@@ -63,6 +71,10 @@ namespace lynxs.forms
             this.backstageMain.SuspendLayout();
             this.navGroupsClient.SuspendLayout();
             this.navPaymentsClient.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
+            this.backstageViewClientControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -133,6 +145,7 @@ namespace lynxs.forms
             // 
             this.startNewGroup.Caption = "group";
             this.startNewGroup.Id = 2;
+            this.startNewGroup.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G));
             this.startNewGroup.Name = "startNewGroup";
             this.startNewGroup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startNewGroup_ItemClick);
             // 
@@ -140,6 +153,7 @@ namespace lynxs.forms
             // 
             this.startNewStd.Caption = "std";
             this.startNewStd.Id = 3;
+            this.startNewStd.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.startNewStd.Name = "startNewStd";
             this.startNewStd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startNewStd_ItemClick);
             // 
@@ -202,55 +216,109 @@ namespace lynxs.forms
             this.backstageMain.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
             this.backstageMain.Controls.Add(this.navGroupsClient);
             this.backstageMain.Controls.Add(this.navPaymentsClient);
+            this.backstageMain.Controls.Add(this.backstageViewClientControl1);
             this.backstageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backstageMain.Items.Add(this.navGroups);
             this.backstageMain.Items.Add(this.navPayments);
+            this.backstageMain.Items.Add(this.backstageViewTabItem1);
             this.backstageMain.Location = new System.Drawing.Point(0, 83);
             this.backstageMain.Name = "backstageMain";
-            this.backstageMain.SelectedTab = this.navGroups;
-            this.backstageMain.SelectedTabIndex = 0;
+            this.backstageMain.SelectedTab = this.backstageViewTabItem1;
+            this.backstageMain.SelectedTabIndex = 2;
             this.backstageMain.Size = new System.Drawing.Size(1274, 398);
             this.backstageMain.TabIndex = 10;
             this.backstageMain.Text = "backstageViewControl1";
             // 
             // navGroupsClient
             // 
-            this.navGroupsClient.Controls.Add(this.peoples1);
+            this.navGroupsClient.Controls.Add(this.peoplesCtrl);
             this.navGroupsClient.Location = new System.Drawing.Point(158, 0);
             this.navGroupsClient.Name = "navGroupsClient";
             this.navGroupsClient.Size = new System.Drawing.Size(1116, 398);
             this.navGroupsClient.TabIndex = 1;
             // 
-            // peoples1
+            // peoplesCtrl
             // 
-            this.peoples1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.peoples1.Location = new System.Drawing.Point(0, 0);
-            this.peoples1.Name = "peoples1";
-            this.peoples1.Size = new System.Drawing.Size(1116, 398);
-            this.peoples1.TabIndex = 0;
+            this.peoplesCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.peoplesCtrl.Location = new System.Drawing.Point(0, 0);
+            this.peoplesCtrl.Name = "peoplesCtrl";
+            this.peoplesCtrl.Size = new System.Drawing.Size(1116, 398);
+            this.peoplesCtrl.TabIndex = 0;
             // 
             // navPaymentsClient
             // 
-            this.navPaymentsClient.Controls.Add(this.payments1);
+            this.navPaymentsClient.Controls.Add(this.paymentsCtrl);
             this.navPaymentsClient.Location = new System.Drawing.Point(158, 0);
             this.navPaymentsClient.Name = "navPaymentsClient";
             this.navPaymentsClient.Size = new System.Drawing.Size(1116, 398);
             this.navPaymentsClient.TabIndex = 2;
             // 
-            // payments1
+            // paymentsCtrl
             // 
-            this.payments1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.payments1.Location = new System.Drawing.Point(0, 0);
-            this.payments1.Name = "payments1";
-            this.payments1.Size = new System.Drawing.Size(1116, 398);
-            this.payments1.TabIndex = 0;
+            this.paymentsCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paymentsCtrl.Location = new System.Drawing.Point(0, 0);
+            this.paymentsCtrl.Name = "paymentsCtrl";
+            this.paymentsCtrl.Size = new System.Drawing.Size(1116, 398);
+            this.paymentsCtrl.TabIndex = 0;
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Controls.Add(this.backstageViewControl1);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(158, 0);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(1116, 398);
+            this.backstageViewClientControl1.TabIndex = 3;
+            // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem2);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem3);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem4);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 0);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem4;
+            this.backstageViewControl1.SelectedTabIndex = 2;
+            this.backstageViewControl1.Size = new System.Drawing.Size(1116, 398);
+            this.backstageViewControl1.TabIndex = 7;
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.journal1);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(132, 0);
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(984, 398);
+            this.backstageViewClientControl2.TabIndex = 1;
+            // 
+            // backstageViewTabItem2
+            // 
+            this.backstageViewTabItem2.Caption = "1610";
+            this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
+            this.backstageViewTabItem2.Selected = false;
+            // 
+            // backstageViewTabItem3
+            // 
+            this.backstageViewTabItem3.Caption = "1510";
+            this.backstageViewTabItem3.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem3.Name = "backstageViewTabItem3";
+            this.backstageViewTabItem3.Selected = false;
+            // 
+            // backstageViewTabItem4
+            // 
+            this.backstageViewTabItem4.Caption = "1410";
+            this.backstageViewTabItem4.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem4.Name = "backstageViewTabItem4";
+            this.backstageViewTabItem4.Selected = true;
             // 
             // navGroups
             // 
             this.navGroups.Caption = "groups / peoples";
             this.navGroups.ContentControl = this.navGroupsClient;
             this.navGroups.Name = "navGroups";
-            this.navGroups.Selected = true;
+            this.navGroups.Selected = false;
             // 
             // navPayments
             // 
@@ -258,6 +326,21 @@ namespace lynxs.forms
             this.navPayments.ContentControl = this.navPaymentsClient;
             this.navPayments.Name = "navPayments";
             this.navPayments.Selected = false;
+            // 
+            // backstageViewTabItem1
+            // 
+            this.backstageViewTabItem1.Caption = "journal";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.backstageViewTabItem1.Selected = true;
+            // 
+            // journal1
+            // 
+            this.journal1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.journal1.Location = new System.Drawing.Point(0, 0);
+            this.journal1.Name = "journal1";
+            this.journal1.Size = new System.Drawing.Size(984, 398);
+            this.journal1.TabIndex = 0;
             // 
             // main
             // 
@@ -281,6 +364,10 @@ namespace lynxs.forms
             this.backstageMain.ResumeLayout(false);
             this.navGroupsClient.ResumeLayout(false);
             this.navPaymentsClient.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
+            this.backstageViewClientControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,10 +394,18 @@ namespace lynxs.forms
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl navPaymentsClient;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem navGroups;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem navPayments;
-        private payments payments1;
-        private peoples peoples1;
+        private payments paymentsCtrl;
+        private peoples peoplesCtrl;
         private DevExpress.XtraBars.BarButtonItem startDelBtn;
         public DevExpress.XtraBars.BarButtonItem startEditBtn;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem3;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem4;
+        private journal journal1;
     }
 }
 

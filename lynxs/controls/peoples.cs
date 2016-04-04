@@ -24,7 +24,7 @@ namespace lynxs.controls
         }
         public async void groupFullFill()
         {
-            var groupTable = await db_actions.groupList();
+            var groupTable = await dbActions.groupList();
             
             realTimeGroup.DataSource = groupTable;
             groupView.PopulateColumns();
@@ -34,13 +34,13 @@ namespace lynxs.controls
         }
         public void stdFullGridFill()
         {
-            var stdtable = db_actions.stdFullList();
+            var stdtable = dbActions.stdFullList();
             realTimeStudents.DataSource = stdtable;
         }
 
         private void stdGridFill(string groupno)
         {
-            var stable = db_actions.stdlist(groupno);
+            var stable = dbActions.stdlist(groupno);
             realTimeStudents.DataSource = stable;
         }
         public void groupView_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -71,7 +71,7 @@ namespace lynxs.controls
             try
             {
                 var id = studentView.GetRowCellValue(studentView.FocusedRowHandle, "_id").ToString();
-                var detail = await db_actions.stdDetail(id);
+                var detail = await dbActions.stdDetail(id);
                 var x = detail["contacts"].AsBsonDocument;
                 
                 infoheader.Text = (string)detail["fullname"];

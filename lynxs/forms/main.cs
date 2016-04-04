@@ -21,29 +21,29 @@ namespace lynxs.forms
 
         private void main_Load(object sender, System.EventArgs e)
         {
-            peoples1.groupFullFill();
+            peoplesCtrl.groupFullFill();
         }
 
         private void startNewStd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var frm = new stdform();
+            var frm = new stdformv2();
             var newstd = new XtraForm
             {
                 FormBorderStyle = FormBorderStyle.FixedDialog,
                 MaximizeBox = false,
-                MinimizeBox = false,
+                MinimizeBox = false
 
             };
             newstd.Controls.Add(frm);
             newstd.Controls[0].Dock = DockStyle.Fill;
-            newstd.ClientSize = new Size(frm.mainlayout.Root.MinSize.Width, frm.mainlayout.Root.MinSize.Height);
+            newstd.ClientSize = new Size(frm.mainlayoutcontrol.Root.MinSize.Width, frm.mainlayoutcontrol.Root.MinSize.Height);
             newstd.StartPosition = FormStartPosition.CenterParent;
             newstd.ShowDialog(this);
         }
 
         private void startNewGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var grp = new groupform();
+            var grp = new groupformv2();
             var newgroup = new XtraForm
             {
                 FormBorderStyle = FormBorderStyle.FixedDialog,
@@ -61,9 +61,9 @@ namespace lynxs.forms
         private void startEditBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             // todo edit form fill
-            if (peoples1.studentView.IsFocusedView)
+            if (peoplesCtrl.studentView.IsFocusedView)
                     MessageBox.Show("stds");
-                else if (peoples1.groupView.IsFocusedView)
+                else if (peoplesCtrl.groupView.IsFocusedView)
                     MessageBox.Show("grps");
                 else MessageBox.Show("none");
         }
