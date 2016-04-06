@@ -100,62 +100,81 @@
             // 
             // phoneadd
             // 
-            this.phoneadd.Location = new System.Drawing.Point(526, 90);
+            this.phoneadd.Location = new System.Drawing.Point(492, 111);
             this.phoneadd.Name = "phoneadd";
-            this.phoneadd.Size = new System.Drawing.Size(243, 13);
+            this.phoneadd.Size = new System.Drawing.Size(178, 36);
             this.phoneadd.StyleController = this.layoutControl1;
             this.phoneadd.TabIndex = 13;
             this.phoneadd.Text = "...";
             // 
             // phonemain
             // 
-            this.phonemain.Location = new System.Drawing.Point(526, 73);
+            this.phonemain.Location = new System.Drawing.Point(492, 69);
             this.phonemain.Name = "phonemain";
-            this.phonemain.Size = new System.Drawing.Size(243, 13);
+            this.phonemain.Size = new System.Drawing.Size(178, 38);
             this.phonemain.StyleController = this.layoutControl1;
             this.phonemain.TabIndex = 12;
             this.phonemain.Text = "...";
             // 
             // infoheader
             // 
-            this.infoheader.Appearance.FontSizeDelta = 2;
-            this.infoheader.Location = new System.Drawing.Point(457, 12);
+            this.infoheader.Appearance.FontSizeDelta = 1;
+            this.infoheader.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.infoheader.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.infoheader.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.infoheader.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.infoheader.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.infoheader.Location = new System.Drawing.Point(423, 7);
             this.infoheader.Name = "infoheader";
-            this.infoheader.Padding = new System.Windows.Forms.Padding(9, 0, 7, 5);
-            this.infoheader.Size = new System.Drawing.Size(324, 22);
+            this.infoheader.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.infoheader.Size = new System.Drawing.Size(259, 23);
             this.infoheader.StyleController = this.layoutControl1;
             this.infoheader.TabIndex = 11;
             this.infoheader.Text = "info";
+            this.infoheader.UseMnemonic = false;
             // 
             // stdHeadLabel
             // 
-            this.stdHeadLabel.Appearance.FontSizeDelta = 2;
-            this.stdHeadLabel.Location = new System.Drawing.Point(158, 12);
+            this.stdHeadLabel.Appearance.FontSizeDelta = 1;
+            this.stdHeadLabel.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.stdHeadLabel.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.stdHeadLabel.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.stdHeadLabel.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.stdHeadLabel.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.stdHeadLabel.Location = new System.Drawing.Point(167, 7);
             this.stdHeadLabel.Name = "stdHeadLabel";
-            this.stdHeadLabel.Padding = new System.Windows.Forms.Padding(9, 0, 7, 5);
-            this.stdHeadLabel.Size = new System.Drawing.Size(283, 22);
+            this.stdHeadLabel.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.stdHeadLabel.ShowLineShadow = false;
+            this.stdHeadLabel.Size = new System.Drawing.Size(240, 22);
             this.stdHeadLabel.StyleController = this.layoutControl1;
             this.stdHeadLabel.TabIndex = 10;
             this.stdHeadLabel.Text = "students";
+            this.stdHeadLabel.UseMnemonic = false;
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.FontSizeDelta = 2;
-            this.labelControl4.Location = new System.Drawing.Point(12, 12);
+            this.labelControl4.Appearance.FontSizeDelta = 1;
+            this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
+            this.labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelControl4.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.labelControl4.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.labelControl4.Location = new System.Drawing.Point(7, 7);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Padding = new System.Windows.Forms.Padding(9, 0, 7, 5);
-            this.labelControl4.Size = new System.Drawing.Size(130, 22);
+            this.labelControl4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.labelControl4.Size = new System.Drawing.Size(144, 23);
             this.labelControl4.StyleController = this.layoutControl1;
             this.labelControl4.TabIndex = 9;
             this.labelControl4.Text = "groups";
+            this.labelControl4.UseMnemonic = false;
             // 
             // studentGrid
             // 
             this.studentGrid.DataSource = this.realTimeStudents;
-            this.studentGrid.Location = new System.Drawing.Point(158, 38);
+            this.studentGrid.Location = new System.Drawing.Point(167, 33);
             this.studentGrid.MainView = this.studentView;
             this.studentGrid.Name = "studentGrid";
-            this.studentGrid.Size = new System.Drawing.Size(283, 348);
+            this.studentGrid.Size = new System.Drawing.Size(240, 358);
             this.studentGrid.TabIndex = 5;
             this.studentGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.studentView});
@@ -167,6 +186,7 @@
             // 
             // studentView
             // 
+            this.studentView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.studentView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None;
             this.studentView.GridControl = this.studentGrid;
             this.studentView.Name = "studentView";
@@ -178,19 +198,21 @@
             this.studentView.OptionsFind.ShowCloseButton = false;
             this.studentView.OptionsFind.ShowFindButton = false;
             this.studentView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.studentView.OptionsView.ShowColumnHeaders = false;
             this.studentView.OptionsView.ShowGroupPanel = false;
             this.studentView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
             this.studentView.OptionsView.ShowIndicator = false;
+            this.studentView.RowHeight = 25;
             this.studentView.ViewCaption = "students";
             this.studentView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.studentView_FocusedRowChanged);
             // 
             // groupGrid
             // 
             this.groupGrid.DataSource = this.realTimeGroup;
-            this.groupGrid.Location = new System.Drawing.Point(12, 38);
+            this.groupGrid.Location = new System.Drawing.Point(7, 34);
             this.groupGrid.MainView = this.groupView;
             this.groupGrid.Name = "groupGrid";
-            this.groupGrid.Size = new System.Drawing.Size(130, 348);
+            this.groupGrid.Size = new System.Drawing.Size(144, 357);
             this.groupGrid.TabIndex = 4;
             this.groupGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.groupView});
@@ -202,6 +224,7 @@
             // 
             // groupView
             // 
+            this.groupView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.None;
             this.groupView.GridControl = this.groupGrid;
             this.groupView.Name = "groupView";
@@ -211,6 +234,7 @@
             this.groupView.OptionsView.ShowGroupPanel = false;
             this.groupView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
             this.groupView.OptionsView.ShowIndicator = false;
+            this.groupView.RowHeight = 25;
             this.groupView.ViewCaption = "groups";
             this.groupView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.groupView_FocusedRowChanged);
             // 
@@ -230,31 +254,32 @@
             this.emptySpaceItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlGroup1.Size = new System.Drawing.Size(793, 398);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // splitterItem1
             // 
             this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(134, 0);
+            this.splitterItem1.Location = new System.Drawing.Point(148, 0);
             this.splitterItem1.Name = "splitterItem1";
-            this.splitterItem1.Size = new System.Drawing.Size(12, 378);
+            this.splitterItem1.Size = new System.Drawing.Size(12, 388);
             // 
             // splitterItem2
             // 
             this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(433, 0);
+            this.splitterItem2.Location = new System.Drawing.Point(404, 0);
             this.splitterItem2.Name = "splitterItem2";
-            this.splitterItem2.Size = new System.Drawing.Size(12, 378);
+            this.splitterItem2.Size = new System.Drawing.Size(12, 388);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupGrid;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 26);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 27);
             this.layoutControlItem1.MaxSize = new System.Drawing.Size(170, 0);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(104, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(134, 352);
+            this.layoutControlItem1.Size = new System.Drawing.Size(148, 361);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -262,11 +287,11 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.studentGrid;
-            this.layoutControlItem2.Location = new System.Drawing.Point(146, 26);
+            this.layoutControlItem2.Location = new System.Drawing.Point(160, 26);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(290, 0);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(100, 1);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(287, 352);
+            this.layoutControlItem2.Size = new System.Drawing.Size(244, 362);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -277,7 +302,7 @@
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(63, 26);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(134, 26);
+            this.layoutControlItem6.Size = new System.Drawing.Size(148, 27);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
@@ -285,10 +310,10 @@
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.stdHeadLabel;
-            this.layoutControlItem7.Location = new System.Drawing.Point(146, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(160, 0);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(73, 26);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(287, 26);
+            this.layoutControlItem7.Size = new System.Drawing.Size(244, 26);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
@@ -296,21 +321,21 @@
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.infoheader;
-            this.layoutControlItem8.Location = new System.Drawing.Point(445, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(416, 0);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(42, 26);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(328, 26);
+            this.layoutControlItem8.Size = new System.Drawing.Size(263, 27);
             this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(445, 26);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(416, 27);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.SelectedTabPage = this.paymentsgroup;
             this.tabbedControlGroup1.SelectedTabPageIndex = 1;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(328, 176);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(263, 361);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.contactsgroup,
             this.paymentsgroup});
@@ -319,7 +344,7 @@
             // 
             this.paymentsgroup.Location = new System.Drawing.Point(0, 0);
             this.paymentsgroup.Name = "paymentsgroup";
-            this.paymentsgroup.Size = new System.Drawing.Size(304, 129);
+            this.paymentsgroup.Size = new System.Drawing.Size(239, 314);
             this.paymentsgroup.Text = "payments";
             // 
             // contactsgroup
@@ -330,7 +355,7 @@
             this.emptySpaceItem2});
             this.contactsgroup.Location = new System.Drawing.Point(0, 0);
             this.contactsgroup.Name = "contactsgroup";
-            this.contactsgroup.Size = new System.Drawing.Size(304, 129);
+            this.contactsgroup.Size = new System.Drawing.Size(239, 314);
             this.contactsgroup.Text = "contacts";
             // 
             // layoutControlItem3
@@ -338,10 +363,10 @@
             this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.GrayText;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem3.Control = this.phoneadd;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 17);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 42);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(73, 17);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(304, 17);
+            this.layoutControlItem3.Size = new System.Drawing.Size(239, 40);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.Text = "phone #2";
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -356,7 +381,7 @@
             this.phonemainlabel.Location = new System.Drawing.Point(0, 0);
             this.phonemainlabel.MinSize = new System.Drawing.Size(73, 17);
             this.phonemainlabel.Name = "phonemainlabel";
-            this.phonemainlabel.Size = new System.Drawing.Size(304, 17);
+            this.phonemainlabel.Size = new System.Drawing.Size(239, 42);
             this.phonemainlabel.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.phonemainlabel.Text = "phone #1";
             this.phonemainlabel.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -366,20 +391,20 @@
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 34);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 82);
             this.emptySpaceItem2.MinSize = new System.Drawing.Size(104, 24);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(304, 95);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(239, 232);
             this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(445, 202);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(679, 0);
             this.emptySpaceItem1.MinSize = new System.Drawing.Size(104, 24);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(328, 176);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(104, 388);
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 0, 0, 0);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);

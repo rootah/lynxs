@@ -2,12 +2,14 @@
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using lynxs.controls;
+using lynxs.forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace lynxs.classes
 {
-    internal class dbActions
+    internal static class dbActions
     {
         private static IMongoClient _client;
         private static IMongoDatabase _database;
@@ -35,6 +37,11 @@ namespace lynxs.classes
             await _stdcollection.InsertOneAsync(stdoc);
         }
 
+        public static async void grpInsert(BsonDocument grpdoc)
+        {
+            await _groupcollection.InsertOneAsync(grpdoc);
+        }
+
         public static async Task<List<BsonValue>> groupComboFill()
         {
             var grouplist = new List<BsonValue>();
@@ -57,8 +64,6 @@ namespace lynxs.classes
         public static async Task<BsonDocument> stdContacts(string id)
         {
             var stdid = ObjectId.Parse(id);
-            //var queryString = Query.EQ("Athlete.Id", "123456789101112131415161");
-            //var resultBsons = collection.Find(queryString).ToList();
 
             var filter = Builders<BsonDocument>.Filter.Eq("_id", stdid);
             var document = await _stdcollection.Find(filter).FirstAsync();

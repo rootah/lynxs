@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using lynxs.classes;
 using lynxs.controls;
+using lynxs.controls.v2;
 
 namespace lynxs.forms
 {
@@ -17,6 +18,11 @@ namespace lynxs.forms
         private void backstageHalt_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
             Close();
+        }
+
+        public void groupGridFill()
+        {
+            peoplesCtrl.groupFullFill();
         }
 
         private void main_Load(object sender, System.EventArgs e)
@@ -43,7 +49,7 @@ namespace lynxs.forms
 
         private void startNewGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            var grp = new groupformv2();
+            var grp = new groupformv2(this);
             var newgroup = new XtraForm
             {
                 FormBorderStyle = FormBorderStyle.FixedDialog,
@@ -66,6 +72,15 @@ namespace lynxs.forms
                 else if (peoplesCtrl.groupView.IsFocusedView)
                     MessageBox.Show("grps");
                 else MessageBox.Show("none");
+        }
+
+
+        private void backstageMain_SelectedTabChanged(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            if (backstageMain.SelectedTabIndex == 1)
+            {
+                ribbonPaymentsCat.Visible = true;}
+            else ribbonPaymentsCat.Visible = false;
         }
     }
 }

@@ -111,12 +111,6 @@
     <Compile Include="controls\groupform.Designer.cs">
       <DependentUpon>groupform.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\groupformv2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="controls\groupformv2.Designer.cs">
-      <DependentUpon>groupformv2.cs</DependentUpon>
-    </Compile>
     <Compile Include="controls\journal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,10 +135,22 @@
     <Compile Include="controls\stdform.Designer.cs">
       <DependentUpon>stdform.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\stdformv2.cs">
+    <Compile Include="controls\v2\groupformv2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\stdformv2.Designer.cs">
+    <Compile Include="controls\v2\groupformv2.Designer.cs">
+      <DependentUpon>groupformv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\v2\peoplesv2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\v2\peoplesv2.Designer.cs">
+      <DependentUpon>peoplesv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\v2\stdformv2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\v2\stdformv2.Designer.cs">
       <DependentUpon>stdformv2.cs</DependentUpon>
     </Compile>
     <Compile Include="customcontrols\CustomBackstageViewControl.cs">
@@ -161,9 +167,6 @@
     <EmbeddedResource Include="controls\groupform.resx">
       <DependentUpon>groupform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\groupformv2.resx">
-      <DependentUpon>groupformv2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="controls\journal.resx">
       <DependentUpon>journal.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,7 +179,13 @@
     <EmbeddedResource Include="controls\stdform.resx">
       <DependentUpon>stdform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\stdformv2.resx">
+    <EmbeddedResource Include="controls\v2\groupformv2.resx">
+      <DependentUpon>groupformv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\v2\peoplesv2.resx">
+      <DependentUpon>peoplesv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\v2\stdformv2.resx">
       <DependentUpon>stdformv2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\main.resx">
