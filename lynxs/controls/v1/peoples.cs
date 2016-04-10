@@ -1,15 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Windows.Forms;
-using DevExpress.XtraLayout;
-using DevExpress.Utils;
-using DevExpress.XtraEditors;
-using lynxs.classes;
-using lynxs.forms;
-using MongoDB.Bson;
+﻿using lynxs.classes;
 
-namespace lynxs.controls
-{
+namespace lynxs.controls.v1{
     public partial class peoples : DevExpress.XtraEditors.XtraUserControl
     {
         public peoples()

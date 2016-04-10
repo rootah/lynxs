@@ -105,34 +105,40 @@
   <ItemGroup>
     <Compile Include="classes\dbActions.cs" />
     <Compile Include="classes\db_classes.cs" />
-    <Compile Include="controls\groupform.cs">
+    <Compile Include="controls\gears.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\groupform.Designer.cs">
+    <Compile Include="controls\gears.Designer.cs">
+      <DependentUpon>gears.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\v1\groupform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\v1\groupform.Designer.cs">
       <DependentUpon>groupform.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\journal.cs">
+    <Compile Include="controls\v1\journal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\journal.Designer.cs">
+    <Compile Include="controls\v1\journal.Designer.cs">
       <DependentUpon>journal.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\payments.cs">
+    <Compile Include="controls\v1\payments.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\payments.Designer.cs">
+    <Compile Include="controls\v1\payments.Designer.cs">
       <DependentUpon>payments.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\peoples.cs">
+    <Compile Include="controls\v1\peoples.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\peoples.Designer.cs">
+    <Compile Include="controls\v1\peoples.Designer.cs">
       <DependentUpon>peoples.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\stdform.cs">
+    <Compile Include="controls\v1\stdform.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controls\stdform.Designer.cs">
+    <Compile Include="controls\v1\stdform.Designer.cs">
       <DependentUpon>stdform.cs</DependentUpon>
     </Compile>
     <Compile Include="controls\v2\groupformv2.cs">
@@ -164,19 +170,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="controls\groupform.resx">
+    <EmbeddedResource Include="controls\gears.resx">
+      <DependentUpon>gears.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\v1\groupform.resx">
       <DependentUpon>groupform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\journal.resx">
+    <EmbeddedResource Include="controls\v1\journal.resx">
       <DependentUpon>journal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\payments.resx">
+    <EmbeddedResource Include="controls\v1\payments.resx">
       <DependentUpon>payments.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\peoples.resx">
+    <EmbeddedResource Include="controls\v1\peoples.resx">
       <DependentUpon>peoples.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controls\stdform.resx">
+    <EmbeddedResource Include="controls\v1\stdform.resx">
       <DependentUpon>stdform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controls\v2\groupformv2.resx">

@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.mainlayoutcontrol = new DevExpress.XtraLayout.LayoutControl();
+            this.cost = new DevExpress.XtraEditors.TextEdit();
             this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
             this.memoExEdit1 = new DevExpress.XtraEditors.MemoExEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.phone = new DevExpress.XtraEditors.TextEdit();
+            this.phonemain = new DevExpress.XtraEditors.TextEdit();
+            this.group = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.individualcheck = new DevExpress.XtraEditors.CheckEdit();
+            this.underagecheck = new DevExpress.XtraEditors.CheckEdit();
+            this.lname = new DevExpress.XtraEditors.TextEdit();
+            this.fname = new DevExpress.XtraEditors.TextEdit();
+            this.idlabel = new DevExpress.XtraEditors.LabelControl();
+            this.okBtn = new DevExpress.XtraEditors.SimpleButton();
+            this.cancelBtn = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -64,20 +65,20 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.mainlayoutcontrol)).BeginInit();
             this.mainlayoutcontrol.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cost.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoExEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phonemain.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.individualcheck.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.underagecheck.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lname.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
@@ -101,28 +102,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             this.SuspendLayout();
             // 
             // mainlayoutcontrol
             // 
             this.mainlayoutcontrol.AutoScroll = false;
-            this.mainlayoutcontrol.Controls.Add(this.textEdit5);
+            this.mainlayoutcontrol.Controls.Add(this.cost);
             this.mainlayoutcontrol.Controls.Add(this.dropDownButton1);
             this.mainlayoutcontrol.Controls.Add(this.memoExEdit1);
-            this.mainlayoutcontrol.Controls.Add(this.textEdit4);
-            this.mainlayoutcontrol.Controls.Add(this.textEdit3);
-            this.mainlayoutcontrol.Controls.Add(this.comboBoxEdit1);
-            this.mainlayoutcontrol.Controls.Add(this.checkEdit2);
-            this.mainlayoutcontrol.Controls.Add(this.checkEdit1);
-            this.mainlayoutcontrol.Controls.Add(this.textEdit2);
-            this.mainlayoutcontrol.Controls.Add(this.textEdit1);
-            this.mainlayoutcontrol.Controls.Add(this.labelControl1);
-            this.mainlayoutcontrol.Controls.Add(this.simpleButton1);
-            this.mainlayoutcontrol.Controls.Add(this.simpleButton2);
+            this.mainlayoutcontrol.Controls.Add(this.phone);
+            this.mainlayoutcontrol.Controls.Add(this.phonemain);
+            this.mainlayoutcontrol.Controls.Add(this.group);
+            this.mainlayoutcontrol.Controls.Add(this.individualcheck);
+            this.mainlayoutcontrol.Controls.Add(this.underagecheck);
+            this.mainlayoutcontrol.Controls.Add(this.lname);
+            this.mainlayoutcontrol.Controls.Add(this.fname);
+            this.mainlayoutcontrol.Controls.Add(this.idlabel);
+            this.mainlayoutcontrol.Controls.Add(this.okBtn);
+            this.mainlayoutcontrol.Controls.Add(this.cancelBtn);
             this.mainlayoutcontrol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainlayoutcontrol.Location = new System.Drawing.Point(0, 0);
             this.mainlayoutcontrol.Name = "mainlayoutcontrol";
@@ -134,13 +134,21 @@
             this.mainlayoutcontrol.TabIndex = 0;
             this.mainlayoutcontrol.Text = "layoutControl1";
             // 
+            // cost
+            // 
+            this.cost.Location = new System.Drawing.Point(97, 232);
+            this.cost.Name = "cost";
+            this.cost.Size = new System.Drawing.Size(184, 20);
+            this.cost.StyleController = this.mainlayoutcontrol;
+            this.cost.TabIndex = 6;
+            // 
             // dropDownButton1
             // 
             this.dropDownButton1.Location = new System.Drawing.Point(189, 328);
             this.dropDownButton1.Name = "dropDownButton1";
             this.dropDownButton1.Size = new System.Drawing.Size(92, 22);
             this.dropDownButton1.StyleController = this.mainlayoutcontrol;
-            this.dropDownButton1.TabIndex = 1;
+            this.dropDownButton1.TabIndex = 9;
             this.dropDownButton1.Text = "add contact";
             // 
             // memoExEdit1
@@ -151,97 +159,98 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.memoExEdit1.Size = new System.Drawing.Size(184, 20);
             this.memoExEdit1.StyleController = this.mainlayoutcontrol;
-            this.memoExEdit1.TabIndex = 7;
+            this.memoExEdit1.TabIndex = 1;
             // 
-            // textEdit4
+            // phone
             // 
-            this.textEdit4.Location = new System.Drawing.Point(97, 304);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(184, 20);
-            this.textEdit4.StyleController = this.mainlayoutcontrol;
-            this.textEdit4.TabIndex = 1;
+            this.phone.Location = new System.Drawing.Point(97, 304);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(184, 20);
+            this.phone.StyleController = this.mainlayoutcontrol;
+            this.phone.TabIndex = 8;
             // 
-            // textEdit3
+            // phonemain
             // 
-            this.textEdit3.Location = new System.Drawing.Point(97, 280);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(184, 20);
-            this.textEdit3.StyleController = this.mainlayoutcontrol;
-            this.textEdit3.TabIndex = 1;
+            this.phonemain.Location = new System.Drawing.Point(97, 280);
+            this.phonemain.Name = "phonemain";
+            this.phonemain.Size = new System.Drawing.Size(184, 20);
+            this.phonemain.StyleController = this.mainlayoutcontrol;
+            this.phonemain.TabIndex = 7;
             // 
-            // comboBoxEdit1
+            // group
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(97, 208);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.group.Location = new System.Drawing.Point(97, 208);
+            this.group.Name = "group";
+            this.group.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(184, 20);
-            this.comboBoxEdit1.StyleController = this.mainlayoutcontrol;
-            this.comboBoxEdit1.TabIndex = 5;
+            this.group.Size = new System.Drawing.Size(184, 20);
+            this.group.StyleController = this.mainlayoutcontrol;
+            this.group.TabIndex = 5;
             // 
-            // checkEdit2
+            // individualcheck
             // 
-            this.checkEdit2.Location = new System.Drawing.Point(213, 142);
-            this.checkEdit2.Name = "checkEdit2";
-            this.checkEdit2.Properties.Caption = "individual";
-            this.checkEdit2.Size = new System.Drawing.Size(68, 19);
-            this.checkEdit2.StyleController = this.mainlayoutcontrol;
-            this.checkEdit2.TabIndex = 4;
+            this.individualcheck.Location = new System.Drawing.Point(213, 142);
+            this.individualcheck.Name = "individualcheck";
+            this.individualcheck.Properties.Caption = "individual";
+            this.individualcheck.Size = new System.Drawing.Size(68, 19);
+            this.individualcheck.StyleController = this.mainlayoutcontrol;
+            this.individualcheck.TabIndex = 4;
             // 
-            // checkEdit1
+            // underagecheck
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(213, 119);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "underage";
-            this.checkEdit1.Size = new System.Drawing.Size(68, 19);
-            this.checkEdit1.StyleController = this.mainlayoutcontrol;
-            this.checkEdit1.TabIndex = 3;
-            this.checkEdit1.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged);
+            this.underagecheck.Location = new System.Drawing.Point(213, 119);
+            this.underagecheck.Name = "underagecheck";
+            this.underagecheck.Properties.Caption = "underage";
+            this.underagecheck.Size = new System.Drawing.Size(68, 19);
+            this.underagecheck.StyleController = this.mainlayoutcontrol;
+            this.underagecheck.TabIndex = 3;
+            this.underagecheck.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged);
             // 
-            // textEdit2
+            // lname
             // 
-            this.textEdit2.Location = new System.Drawing.Point(97, 95);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(184, 20);
-            this.textEdit2.StyleController = this.mainlayoutcontrol;
-            this.textEdit2.TabIndex = 2;
+            this.lname.Location = new System.Drawing.Point(97, 95);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(184, 20);
+            this.lname.StyleController = this.mainlayoutcontrol;
+            this.lname.TabIndex = 2;
             // 
-            // textEdit1
+            // fname
             // 
-            this.textEdit1.Location = new System.Drawing.Point(97, 71);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(184, 20);
-            this.textEdit1.StyleController = this.mainlayoutcontrol;
-            this.textEdit1.TabIndex = 0;
+            this.fname.Location = new System.Drawing.Point(97, 71);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(184, 20);
+            this.fname.StyleController = this.mainlayoutcontrol;
+            this.fname.TabIndex = 0;
             // 
-            // labelControl1
+            // idlabel
             // 
-            this.labelControl1.Location = new System.Drawing.Point(95, 12);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(198, 13);
-            this.labelControl1.StyleController = this.mainlayoutcontrol;
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "# ...";
+            this.idlabel.Location = new System.Drawing.Point(95, 12);
+            this.idlabel.Name = "idlabel";
+            this.idlabel.Size = new System.Drawing.Size(198, 13);
+            this.idlabel.StyleController = this.mainlayoutcontrol;
+            this.idlabel.TabIndex = 1;
+            this.idlabel.Text = "# ...";
             // 
-            // simpleButton1
+            // okBtn
             // 
-            this.simpleButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.simpleButton1.Location = new System.Drawing.Point(147, 511);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(66, 23);
-            this.simpleButton1.StyleController = this.mainlayoutcontrol;
-            this.simpleButton1.TabIndex = 5;
-            this.simpleButton1.Text = "OK";
+            this.okBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okBtn.Location = new System.Drawing.Point(147, 511);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(66, 23);
+            this.okBtn.StyleController = this.mainlayoutcontrol;
+            this.okBtn.TabIndex = 10;
+            this.okBtn.Text = "OK";
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
-            // simpleButton2
+            // cancelBtn
             // 
-            this.simpleButton2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.simpleButton2.Location = new System.Drawing.Point(227, 511);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(66, 23);
-            this.simpleButton2.StyleController = this.mainlayoutcontrol;
-            this.simpleButton2.TabIndex = 6;
-            this.simpleButton2.Text = "Cancel";
+            this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelBtn.Location = new System.Drawing.Point(227, 511);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(66, 23);
+            this.cancelBtn.StyleController = this.mainlayoutcontrol;
+            this.cancelBtn.TabIndex = 11;
+            this.cancelBtn.Text = "Cancel";
             // 
             // layoutControlGroup1
             // 
@@ -265,7 +274,7 @@
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.simpleButton1;
+            this.layoutControlItem2.Control = this.okBtn;
             this.layoutControlItem2.CustomizationFormText = "layoutControlItem1";
             this.layoutControlItem2.Location = new System.Drawing.Point(135, 499);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(70, 27);
@@ -280,7 +289,7 @@
             // 
             // layoutControlItem3
             // 
-            this.layoutControlItem3.Control = this.simpleButton2;
+            this.layoutControlItem3.Control = this.cancelBtn;
             this.layoutControlItem3.CustomizationFormText = "layoutControlItem2";
             this.layoutControlItem3.Location = new System.Drawing.Point(215, 499);
             this.layoutControlItem3.MaxSize = new System.Drawing.Size(70, 27);
@@ -328,8 +337,8 @@
             // 
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 256);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.SelectedTabPageIndex = 1;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup2;
+            this.tabbedControlGroup1.SelectedTabPageIndex = 0;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(285, 121);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2,
@@ -359,7 +368,7 @@
             // 
             // layoutControlItem10
             // 
-            this.layoutControlItem10.Control = this.textEdit3;
+            this.layoutControlItem10.Control = this.phonemain;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(261, 24);
@@ -368,7 +377,7 @@
             // 
             // layoutControlItem11
             // 
-            this.layoutControlItem11.Control = this.textEdit4;
+            this.layoutControlItem11.Control = this.phone;
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(261, 24);
@@ -425,7 +434,7 @@
             // 
             // layoutControlItem7
             // 
-            this.layoutControlItem7.Control = this.checkEdit2;
+            this.layoutControlItem7.Control = this.individualcheck;
             this.layoutControlItem7.Location = new System.Drawing.Point(189, 71);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(72, 23);
@@ -434,7 +443,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.checkEdit1;
+            this.layoutControlItem6.Control = this.underagecheck;
             this.layoutControlItem6.Location = new System.Drawing.Point(189, 48);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(72, 23);
@@ -454,7 +463,7 @@
             // 
             // layoutControlItem5
             // 
-            this.layoutControlItem5.Control = this.textEdit2;
+            this.layoutControlItem5.Control = this.lname;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(261, 24);
@@ -463,7 +472,7 @@
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.textEdit1;
+            this.layoutControlItem4.Control = this.fname;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(261, 24);
@@ -482,16 +491,25 @@
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.comboBoxEdit1;
+            this.layoutControlItem8.Control = this.group;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(261, 24);
             this.layoutControlItem8.Text = "group enroll to";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(70, 13);
             // 
+            // layoutControlItem14
+            // 
+            this.layoutControlItem14.Control = this.cost;
+            this.layoutControlItem14.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.layoutControlItem14.Size = new System.Drawing.Size(261, 24);
+            this.layoutControlItem14.Text = "cost";
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(70, 13);
+            // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.labelControl1;
+            this.layoutControlItem1.Control = this.idlabel;
             this.layoutControlItem1.Enabled = false;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(79, 17);
@@ -511,23 +529,6 @@
             this.simpleSeparator1.Size = new System.Drawing.Size(285, 11);
             this.simpleSeparator1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 5, 5);
             // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(97, 232);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(184, 20);
-            this.textEdit5.StyleController = this.mainlayoutcontrol;
-            this.textEdit5.TabIndex = 6;
-            // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.Control = this.textEdit5;
-            this.layoutControlItem14.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(261, 24);
-            this.layoutControlItem14.Text = "cost";
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(70, 13);
-            // 
             // stdformv2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,14 +538,15 @@
             this.Size = new System.Drawing.Size(305, 546);
             ((System.ComponentModel.ISupportInitialize)(this.mainlayoutcontrol)).EndInit();
             this.mainlayoutcontrol.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cost.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoExEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phonemain.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.individualcheck.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.underagecheck.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lname.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
@@ -568,31 +570,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl idlabel;
+        private DevExpress.XtraEditors.SimpleButton okBtn;
+        private DevExpress.XtraEditors.SimpleButton cancelBtn;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit2;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit phone;
+        private DevExpress.XtraEditors.TextEdit phonemain;
+        private DevExpress.XtraEditors.ComboBoxEdit group;
+        private DevExpress.XtraEditors.CheckEdit individualcheck;
+        private DevExpress.XtraEditors.CheckEdit underagecheck;
+        private DevExpress.XtraEditors.TextEdit lname;
+        private DevExpress.XtraEditors.TextEdit fname;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
@@ -615,7 +616,7 @@
         public DevExpress.XtraLayout.LayoutControl mainlayoutcontrol;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit cost;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
     }
 }

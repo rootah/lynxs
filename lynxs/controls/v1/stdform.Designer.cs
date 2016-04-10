@@ -1,4 +1,4 @@
-﻿namespace lynxs.controls
+﻿namespace lynxs.controls.v1
 {
     partial class stdform
     {

@@ -3,11 +3,9 @@ using System.Drawing;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
 using lynxs.classes;
-using lynxs.Properties;
-using MongoDB.Driver;
 using MongoDB.Bson;
 
-namespace lynxs.controls
+namespace lynxs.controls.v1
 {
     public partial class stdform : XtraUserControl
     {

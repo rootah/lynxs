@@ -11,16 +11,11 @@ using DevExpress.XtraEditors;
 
 namespace lynxs.controls
 {
-    public partial class journal : DevExpress.XtraEditors.XtraUserControl
+    public partial class gears : DevExpress.XtraEditors.XtraUserControl
     {
-        public journal()
+        public gears()
         {
             InitializeComponent();
-        }
-
-        private void navigationPage2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

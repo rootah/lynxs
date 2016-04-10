@@ -44,6 +44,12 @@ namespace lynxs.forms
             newstd.Controls[0].Dock = DockStyle.Fill;
             newstd.ClientSize = new Size(frm.mainlayoutcontrol.Root.MinSize.Width, frm.mainlayoutcontrol.Root.MinSize.Height);
             newstd.StartPosition = FormStartPosition.CenterParent;
+            newstd.Text = @"+ creating";
+            
+            if (gears1.fakeCheck.Checked)
+            {
+                // todo check fakegen
+            }
             newstd.ShowDialog(this);
         }
 
@@ -61,14 +67,39 @@ namespace lynxs.forms
             newgroup.Controls[0].Dock = DockStyle.Fill;
             newgroup.ClientSize = new Size(grp.layoutControl1.Root.MinSize.Width, grp.layoutControl1.Root.MinSize.Height);
             newgroup.StartPosition = FormStartPosition.CenterParent;
+            
             newgroup.ShowDialog(this);
         }
 
+        private void stdEdit(string stdid)
+        {
+            // creating form
+            var frm = new stdformv2();
+            var newstd = new XtraForm
+            {
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+
+            };
+            newstd.Controls.Add(frm);
+            newstd.Controls[0].Dock = DockStyle.Fill;
+            newstd.ClientSize = new Size(frm.mainlayoutcontrol.Root.MinSize.Width, frm.mainlayoutcontrol.Root.MinSize.Height);
+            newstd.StartPosition = FormStartPosition.CenterParent;
+            newstd.Text = @"* editing";
+
+            frm.stdEditFormFill(stdid);
+            newstd.ShowDialog(this);
+            // ***
+        }
         private void startEditBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             // todo edit form fill
             if (peoplesCtrl.studentView.IsFocusedView)
-                    MessageBox.Show("stds");
+            {
+                var id = peoplesCtrl.studentView.GetRowCellValue(peoplesCtrl.studentView.FocusedRowHandle, "_id").ToString();
+                stdEdit(id);
+            }
                 else if (peoplesCtrl.groupView.IsFocusedView)
                     MessageBox.Show("grps");
                 else MessageBox.Show("none");
