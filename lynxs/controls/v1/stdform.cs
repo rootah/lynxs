@@ -22,11 +22,12 @@ namespace lynxs.controls.v1
 
         private void fakeGen()
         {
-            fname.Text = Faker.Name.First();
-            lname.Text = Faker.Name.Last();
-            phonemain.Text = Faker.Phone.CellNumber();
-            phoneadd.Text = Faker.Phone.CellNumber();
-            stdid.Text = ObjectId.GenerateNewId().ToString();}
+            //fname.Text = Faker.Name.First();
+            //lname.Text = Faker.Name.Last();
+            //phonemain.Text = Faker.Phone.CellNumber();
+            //phoneadd.Text = Faker.Phone.CellNumber();
+            //stdid.Text = ObjectId.GenerateNewId().ToString();
+        }
         private async void groupFill()
         {
             @group.Properties.Items.Clear();

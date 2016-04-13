@@ -30,7 +30,7 @@
         {
             this.mainlayoutcontrol = new DevExpress.XtraLayout.LayoutControl();
             this.cost = new DevExpress.XtraEditors.TextEdit();
-            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.addcontact = new DevExpress.XtraEditors.DropDownButton();
             this.memoExEdit1 = new DevExpress.XtraEditors.MemoExEdit();
             this.phone = new DevExpress.XtraEditors.TextEdit();
             this.phonemain = new DevExpress.XtraEditors.TextEdit();
@@ -49,12 +49,12 @@
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -86,12 +86,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
@@ -111,7 +111,7 @@
             // 
             this.mainlayoutcontrol.AutoScroll = false;
             this.mainlayoutcontrol.Controls.Add(this.cost);
-            this.mainlayoutcontrol.Controls.Add(this.dropDownButton1);
+            this.mainlayoutcontrol.Controls.Add(this.addcontact);
             this.mainlayoutcontrol.Controls.Add(this.memoExEdit1);
             this.mainlayoutcontrol.Controls.Add(this.phone);
             this.mainlayoutcontrol.Controls.Add(this.phonemain);
@@ -136,24 +136,33 @@
             // 
             // cost
             // 
-            this.cost.Location = new System.Drawing.Point(97, 232);
+            this.cost.Location = new System.Drawing.Point(97, 210);
             this.cost.Name = "cost";
+            this.cost.Properties.DisplayFormat.FormatString = "c0";
+            this.cost.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.cost.Properties.EditFormat.FormatString = "c0";
+            this.cost.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.cost.Properties.Mask.EditMask = "c0";
+            this.cost.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.cost.Properties.NullValuePrompt = "...";
+            this.cost.Properties.NullValuePromptShowForEmptyValue = true;
+            this.cost.Properties.ShowNullValuePromptWhenFocused = true;
             this.cost.Size = new System.Drawing.Size(184, 20);
             this.cost.StyleController = this.mainlayoutcontrol;
             this.cost.TabIndex = 6;
             // 
-            // dropDownButton1
+            // addcontact
             // 
-            this.dropDownButton1.Location = new System.Drawing.Point(189, 328);
-            this.dropDownButton1.Name = "dropDownButton1";
-            this.dropDownButton1.Size = new System.Drawing.Size(92, 22);
-            this.dropDownButton1.StyleController = this.mainlayoutcontrol;
-            this.dropDownButton1.TabIndex = 9;
-            this.dropDownButton1.Text = "add contact";
+            this.addcontact.Location = new System.Drawing.Point(154, 306);
+            this.addcontact.Name = "addcontact";
+            this.addcontact.Size = new System.Drawing.Size(127, 22);
+            this.addcontact.StyleController = this.mainlayoutcontrol;
+            this.addcontact.TabIndex = 9;
+            this.addcontact.Text = "add contact";
             // 
             // memoExEdit1
             // 
-            this.memoExEdit1.Location = new System.Drawing.Point(97, 280);
+            this.memoExEdit1.Location = new System.Drawing.Point(97, 258);
             this.memoExEdit1.Name = "memoExEdit1";
             this.memoExEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -163,7 +172,7 @@
             // 
             // phone
             // 
-            this.phone.Location = new System.Drawing.Point(97, 304);
+            this.phone.Location = new System.Drawing.Point(97, 282);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(184, 20);
             this.phone.StyleController = this.mainlayoutcontrol;
@@ -171,7 +180,7 @@
             // 
             // phonemain
             // 
-            this.phonemain.Location = new System.Drawing.Point(97, 280);
+            this.phonemain.Location = new System.Drawing.Point(97, 258);
             this.phonemain.Name = "phonemain";
             this.phonemain.Size = new System.Drawing.Size(184, 20);
             this.phonemain.StyleController = this.mainlayoutcontrol;
@@ -179,7 +188,7 @@
             // 
             // group
             // 
-            this.group.Location = new System.Drawing.Point(97, 208);
+            this.group.Location = new System.Drawing.Point(97, 186);
             this.group.Name = "group";
             this.group.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -189,21 +198,23 @@
             // 
             // individualcheck
             // 
-            this.individualcheck.Location = new System.Drawing.Point(213, 142);
+            this.individualcheck.Location = new System.Drawing.Point(143, 119);
             this.individualcheck.Name = "individualcheck";
+            this.individualcheck.Properties.AllowFocused = false;
             this.individualcheck.Properties.Caption = "individual";
-            this.individualcheck.Size = new System.Drawing.Size(68, 19);
+            this.individualcheck.Size = new System.Drawing.Size(66, 19);
             this.individualcheck.StyleController = this.mainlayoutcontrol;
-            this.individualcheck.TabIndex = 4;
+            this.individualcheck.TabIndex = 3;
             // 
             // underagecheck
             // 
             this.underagecheck.Location = new System.Drawing.Point(213, 119);
             this.underagecheck.Name = "underagecheck";
+            this.underagecheck.Properties.AllowFocused = false;
             this.underagecheck.Properties.Caption = "underage";
             this.underagecheck.Size = new System.Drawing.Size(68, 19);
             this.underagecheck.StyleController = this.mainlayoutcontrol;
-            this.underagecheck.TabIndex = 3;
+            this.underagecheck.TabIndex = 4;
             this.underagecheck.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged);
             // 
             // lname
@@ -326,33 +337,25 @@
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 377);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 355);
             this.emptySpaceItem3.MinSize = new System.Drawing.Size(285, 10);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(285, 122);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(285, 144);
             this.emptySpaceItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 256);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 234);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup2;
-            this.tabbedControlGroup1.SelectedTabPageIndex = 0;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
+            this.tabbedControlGroup1.SelectedTabPageIndex = 1;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(285, 121);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2,
             this.layoutControlGroup3,
             this.layoutControlGroup4});
             this.tabbedControlGroup1.TextLocation = DevExpress.Utils.Locations.Bottom;
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(261, 74);
-            this.layoutControlGroup3.Text = "parent contacts";
-            this.layoutControlGroup3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // layoutControlGroup2
             // 
@@ -386,10 +389,10 @@
             // 
             // layoutControlItem13
             // 
-            this.layoutControlItem13.Control = this.dropDownButton1;
-            this.layoutControlItem13.Location = new System.Drawing.Point(165, 48);
+            this.layoutControlItem13.Control = this.addcontact;
+            this.layoutControlItem13.Location = new System.Drawing.Point(130, 48);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(96, 26);
+            this.layoutControlItem13.Size = new System.Drawing.Size(131, 26);
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
@@ -398,8 +401,16 @@
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.Location = new System.Drawing.Point(0, 48);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(165, 26);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(130, 26);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(261, 74);
+            this.layoutControlGroup3.Text = "parent contacts";
+            this.layoutControlGroup3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // layoutControlGroup4
             // 
@@ -422,22 +433,22 @@
             // layoutControlGroup5
             // 
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem7,
             this.layoutControlItem6,
             this.emptySpaceItem4,
             this.layoutControlItem5,
-            this.layoutControlItem4});
+            this.layoutControlItem4,
+            this.layoutControlItem7});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 28);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(285, 137);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(285, 115);
             this.layoutControlGroup5.Text = "personal *";
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.individualcheck;
-            this.layoutControlItem7.Location = new System.Drawing.Point(189, 71);
+            this.layoutControlItem7.Location = new System.Drawing.Point(119, 48);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(72, 23);
+            this.layoutControlItem7.Size = new System.Drawing.Size(70, 24);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -446,7 +457,7 @@
             this.layoutControlItem6.Control = this.underagecheck;
             this.layoutControlItem6.Location = new System.Drawing.Point(189, 48);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(72, 23);
+            this.layoutControlItem6.Size = new System.Drawing.Size(72, 24);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -454,10 +465,10 @@
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(0, 48);
-            this.emptySpaceItem4.MaxSize = new System.Drawing.Size(189, 0);
-            this.emptySpaceItem4.MinSize = new System.Drawing.Size(189, 10);
+            this.emptySpaceItem4.MaxSize = new System.Drawing.Size(119, 0);
+            this.emptySpaceItem4.MinSize = new System.Drawing.Size(119, 24);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(189, 46);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(119, 24);
             this.emptySpaceItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -484,7 +495,7 @@
             this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem8,
             this.layoutControlItem14});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 165);
+            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 143);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
             this.layoutControlGroup7.Size = new System.Drawing.Size(285, 91);
             this.layoutControlGroup7.Text = "misc";
@@ -495,7 +506,7 @@
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(261, 24);
-            this.layoutControlItem8.Text = "group enroll to";
+            this.layoutControlItem8.Text = "group no.";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(70, 13);
             // 
             // layoutControlItem14
@@ -504,7 +515,7 @@
             this.layoutControlItem14.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem14.Name = "layoutControlItem14";
             this.layoutControlItem14.Size = new System.Drawing.Size(261, 24);
-            this.layoutControlItem14.Text = "cost";
+            this.layoutControlItem14.Text = "cost, KZT";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(70, 13);
             // 
             // layoutControlItem1
@@ -554,12 +565,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
@@ -608,7 +619,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraEditors.MemoExEdit memoExEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
-        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
+        private DevExpress.XtraEditors.DropDownButton addcontact;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;

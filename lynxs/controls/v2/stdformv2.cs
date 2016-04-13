@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using DevExpress.XtraLayout.Utils;
 using lynxs.classes;
 using MongoDB.Bson;
-using MongoDB.Driver;
 
 namespace lynxs.controls.v2
 {
@@ -12,7 +13,40 @@ namespace lynxs.controls.v2
         public stdformv2()
         {
             InitializeComponent();
+
+        }
+
+        public void controlInit()
+        {
+            idlabel.Text = ObjectId.GenerateNewId().ToString();
             parentResize();
+            fakeCheck();
+            groupFill();
+        }
+
+        private async void groupFill()
+        {
+            @group.Properties.Items.Clear();
+            group.Properties.Items.AddRange(await dbActions.groupComboFill());
+        }
+        private void fakeCheck()
+        {
+            var parent = (Form)Parent;
+            if (parent == null) return;
+            if (parent.Text == @"* editing") return;
+            if (parent.Text == @"+ creating")
+            {
+                if (Properties.Settings.Default.fakegen == true)
+                    fakeGen();
+            }
+        }
+        public void fakeGen()
+        {
+            fname.Text = Faker.Name.First();
+            lname.Text = Faker.Name.Last();
+            phonemain.Text = Faker.Phone.Number();
+            phone.Text = Faker.Phone.Number();
+            
         }
 
         public async void stdEditFormFill(string stdid)
@@ -53,7 +87,7 @@ namespace lynxs.controls.v2
 
         private void parentResize()
         {
-            var parentForm = ParentForm;
+            var parentForm = (Form)Parent;
             if (parentForm == null) return;
             mainlayoutcontrol.BeginUpdate();
             parentForm.ClientSize = new Size(mainlayoutcontrol.Root.MinSize.Width, mainlayoutcontrol.Root.MinSize.Height);

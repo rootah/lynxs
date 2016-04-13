@@ -28,6 +28,7 @@ namespace lynxs.forms
         private void main_Load(object sender, System.EventArgs e)
         {
             peoplesCtrl.groupFullFill();
+            gears1.fakeCheck.Checked = Properties.Settings.Default.fakegen;
         }
 
         private void startNewStd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -45,11 +46,8 @@ namespace lynxs.forms
             newstd.ClientSize = new Size(frm.mainlayoutcontrol.Root.MinSize.Width, frm.mainlayoutcontrol.Root.MinSize.Height);
             newstd.StartPosition = FormStartPosition.CenterParent;
             newstd.Text = @"+ creating";
-            
-            if (gears1.fakeCheck.Checked)
-            {
-                // todo check fakegen
-            }
+
+            frm.controlInit();
             newstd.ShowDialog(this);
         }
 
