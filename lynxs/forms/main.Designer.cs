@@ -1,4 +1,5 @@
 ﻿using lynxs.controls;
+using lynxs.controls.v0;
 using lynxs.controls.v1;
 using lynxs.customcontrols;
 
@@ -38,6 +39,7 @@ namespace lynxs.forms
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.customBackstage = new lynxs.customcontrols.CustomBackstageViewControl();
             this.gearsTabCtrl = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.gears1 = new lynxs.controls.v0.gears();
             this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.backSeparator = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
             this.backstageStop = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
@@ -57,6 +59,7 @@ namespace lynxs.forms
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPaymentsCat = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonMoneys = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -70,19 +73,27 @@ namespace lynxs.forms
             this.peoplesCtrl = new lynxs.controls.v1.peoples();
             this.navPaymentsClient = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.paymentsCtrl = new lynxs.controls.v1.payments();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.paymentsv21 = new lynxs.controls.v2.paymentsv2();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.journal1 = new lynxs.controls.v0.journal();
             this.navGroups = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.navPayments = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.gears1 = new lynxs.controls.gears();
+            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customBackstage)).BeginInit();
             this.customBackstage.SuspendLayout();
             this.gearsTabCtrl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newPop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
+            this.popupControlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backstageMain)).BeginInit();
             this.backstageMain.SuspendLayout();
             this.navGroupsClient.SuspendLayout();
             this.navPaymentsClient.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
+            this.backstageViewClientControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -106,9 +117,10 @@ namespace lynxs.forms
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.barStaticItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 23;
+            this.ribbon.MaxItemId = 25;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageAnimationLength = 0;
             this.ribbon.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -137,12 +149,12 @@ namespace lynxs.forms
             this.customBackstage.Items.Add(this.backstageViewTabItem1);
             this.customBackstage.Items.Add(this.backSeparator);
             this.customBackstage.Items.Add(this.backstageStop);
-            this.customBackstage.Location = new System.Drawing.Point(382, 28);
+            this.customBackstage.Location = new System.Drawing.Point(115, -16);
             this.customBackstage.Name = "customBackstage";
             this.customBackstage.Ribbon = this.ribbon;
             this.customBackstage.SelectedTab = this.backstageViewTabItem1;
             this.customBackstage.SelectedTabIndex = 0;
-            this.customBackstage.Size = new System.Drawing.Size(723, 273);
+            this.customBackstage.Size = new System.Drawing.Size(365, 55);
             this.customBackstage.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
             this.customBackstage.TabIndex = 4;
             this.customBackstage.Text = "customBackstageViewControl1";
@@ -152,8 +164,16 @@ namespace lynxs.forms
             this.gearsTabCtrl.Controls.Add(this.gears1);
             this.gearsTabCtrl.Location = new System.Drawing.Point(133, 63);
             this.gearsTabCtrl.Name = "gearsTabCtrl";
-            this.gearsTabCtrl.Size = new System.Drawing.Size(589, 209);
+            this.gearsTabCtrl.Size = new System.Drawing.Size(214, 0);
             this.gearsTabCtrl.TabIndex = 1;
+            // 
+            // gears1
+            // 
+            this.gears1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gears1.Location = new System.Drawing.Point(0, 0);
+            this.gears1.Name = "gears1";
+            this.gears1.Size = new System.Drawing.Size(214, 0);
+            this.gears1.TabIndex = 0;
             // 
             // backstageViewTabItem1
             // 
@@ -237,6 +257,7 @@ namespace lynxs.forms
             // 
             this.barButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.barButtonItem1.Caption = "today";
+            this.barButtonItem1.GroupIndex = 1;
             this.barButtonItem1.Id = 16;
             this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
@@ -245,6 +266,7 @@ namespace lynxs.forms
             // 
             this.barButtonItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.barButtonItem2.Caption = "week";
+            this.barButtonItem2.GroupIndex = 1;
             this.barButtonItem2.Id = 17;
             this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
             this.barButtonItem2.Name = "barButtonItem2";
@@ -253,6 +275,7 @@ namespace lynxs.forms
             // 
             this.barButtonItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.barButtonItem3.Caption = "month";
+            this.barButtonItem3.GroupIndex = 1;
             this.barButtonItem3.Id = 18;
             this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
             this.barButtonItem3.Name = "barButtonItem3";
@@ -263,12 +286,14 @@ namespace lynxs.forms
             this.barButtonItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem4.Caption = "custom";
             this.barButtonItem4.DropDownControl = this.popupControlContainer1;
+            this.barButtonItem4.GroupIndex = 1;
             this.barButtonItem4.Id = 19;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
             // popupControlContainer1
             // 
             this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer1.Controls.Add(this.customBackstage);
             this.popupControlContainer1.Location = new System.Drawing.Point(701, 28);
             this.popupControlContainer1.Name = "popupControlContainer1";
             this.popupControlContainer1.Ribbon = this.ribbon;
@@ -295,6 +320,14 @@ namespace lynxs.forms
             this.barButtonItem7.Id = 22;
             this.barButtonItem7.Name = "barButtonItem7";
             // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "display period:";
+            this.barStaticItem1.Enabled = false;
+            this.barStaticItem1.Id = 24;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
             // ribbonPaymentsCat
             // 
             this.ribbonPaymentsCat.AutoStretchPageHeaders = true;
@@ -314,10 +347,11 @@ namespace lynxs.forms
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonGroup1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1, false, "", "", true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barStaticItem1, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1, true, "", "", true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2, false, "", "", true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3, false, "", "", true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4, true, "", "", true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "display";
@@ -365,13 +399,17 @@ namespace lynxs.forms
             this.backstageMain.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
             this.backstageMain.Controls.Add(this.navGroupsClient);
             this.backstageMain.Controls.Add(this.navPaymentsClient);
+            this.backstageMain.Controls.Add(this.backstageViewClientControl1);
+            this.backstageMain.Controls.Add(this.backstageViewClientControl2);
             this.backstageMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backstageMain.Items.Add(this.navGroups);
             this.backstageMain.Items.Add(this.navPayments);
+            this.backstageMain.Items.Add(this.backstageViewTabItem2);
+            this.backstageMain.Items.Add(this.backstageViewTabItem3);
             this.backstageMain.Location = new System.Drawing.Point(0, 83);
             this.backstageMain.Name = "backstageMain";
-            this.backstageMain.SelectedTab = this.navPayments;
-            this.backstageMain.SelectedTabIndex = 1;
+            this.backstageMain.SelectedTab = this.navGroups;
+            this.backstageMain.SelectedTabIndex = 0;
             this.backstageMain.Size = new System.Drawing.Size(1274, 398);
             this.backstageMain.TabIndex = 10;
             this.backstageMain.Text = "backstageViewControl1";
@@ -409,34 +447,71 @@ namespace lynxs.forms
             this.paymentsCtrl.Size = new System.Drawing.Size(1116, 398);
             this.paymentsCtrl.TabIndex = 0;
             // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Controls.Add(this.paymentsv21);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(158, 0);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(1116, 398);
+            this.backstageViewClientControl1.TabIndex = 3;
+            // 
+            // paymentsv21
+            // 
+            this.paymentsv21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paymentsv21.Location = new System.Drawing.Point(0, 0);
+            this.paymentsv21.Name = "paymentsv21";
+            this.paymentsv21.Size = new System.Drawing.Size(1116, 398);
+            this.paymentsv21.TabIndex = 0;
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.journal1);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(158, 0);
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(1116, 398);
+            this.backstageViewClientControl2.TabIndex = 4;
+            // 
+            // journal1
+            // 
+            this.journal1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.journal1.Location = new System.Drawing.Point(0, 0);
+            this.journal1.Name = "journal1";
+            this.journal1.Size = new System.Drawing.Size(1116, 398);
+            this.journal1.TabIndex = 0;
+            // 
             // navGroups
             // 
             this.navGroups.Caption = "groups / peoples";
             this.navGroups.ContentControl = this.navGroupsClient;
             this.navGroups.Name = "navGroups";
-            this.navGroups.Selected = false;
+            this.navGroups.Selected = true;
             // 
             // navPayments
             // 
             this.navPayments.Caption = "payments";
             this.navPayments.ContentControl = this.navPaymentsClient;
             this.navPayments.Name = "navPayments";
-            this.navPayments.Selected = true;
+            this.navPayments.Selected = false;
             // 
-            // gears1
+            // backstageViewTabItem2
             // 
-            this.gears1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gears1.Location = new System.Drawing.Point(0, 0);
-            this.gears1.Name = "gears1";
-            this.gears1.Size = new System.Drawing.Size(589, 209);
-            this.gears1.TabIndex = 0;
+            this.backstageViewTabItem2.Caption = "payments v2";
+            this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
+            this.backstageViewTabItem2.Selected = false;
+            // 
+            // backstageViewTabItem3
+            // 
+            this.backstageViewTabItem3.Caption = "journal";
+            this.backstageViewTabItem3.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem3.Name = "backstageViewTabItem3";
+            this.backstageViewTabItem3.Selected = false;
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 502);
-            this.Controls.Add(this.customBackstage);
             this.Controls.Add(this.backstageMain);
             this.Controls.Add(this.popupControlContainer1);
             this.Controls.Add(this.ribbonStatus);
@@ -448,16 +523,20 @@ namespace lynxs.forms
             this.StatusBar = this.ribbonStatus;
             this.Text = "lynx.s 0x1";
             this.Load += new System.EventHandler(this.main_Load);
+            this.BindingContextChanged += new System.EventHandler(this.main_BindingContextChanged);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customBackstage)).EndInit();
             this.customBackstage.ResumeLayout(false);
             this.gearsTabCtrl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.newPop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
+            this.popupControlContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backstageMain)).EndInit();
             this.backstageMain.ResumeLayout(false);
             this.navGroupsClient.ResumeLayout(false);
             this.navPaymentsClient.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
+            this.backstageViewClientControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,6 +583,13 @@ namespace lynxs.forms
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
         private DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator backSeparator;
         private gears gears1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private controls.v2.paymentsv2 paymentsv21;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
+        private controls.v0.journal journal1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem3;
     }
 }
 

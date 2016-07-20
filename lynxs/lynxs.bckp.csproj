@@ -47,34 +47,30 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>lynxs.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="DevExpress.BonusSkins.v16.1" />
-    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v16.1" />
-    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Spreadsheet.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.1" />
-    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v16.1" />
-    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraRichEdit.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraSpreadsheet.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.BonusSkins.v15.2" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Faker.NET4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Faker.Net.1.0.3\lib\net40\Faker.NET4.dll</HintPath>
       <Private>True</Private>
@@ -112,78 +108,52 @@
   <ItemGroup>
     <Compile Include="classes\dbActions.cs" />
     <Compile Include="classes\db_classes.cs" />
-    <Compile Include="controls\v0\gears.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v0\gears.cs" />
     <Compile Include="controls\v0\gears.Designer.cs">
       <DependentUpon>gears.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v0\journal.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v0\journal.cs" />
     <Compile Include="controls\v0\journal.Designer.cs">
       <DependentUpon>journal.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v1\groupform.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v1\groupform.cs" />
     <Compile Include="controls\v1\groupform.Designer.cs">
       <DependentUpon>groupform.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v1\journal.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v1\journal.cs" />
     <Compile Include="controls\v1\journal.Designer.cs">
       <DependentUpon>journal.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v1\payments.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v1\payments.cs" />
     <Compile Include="controls\v1\payments.Designer.cs">
       <DependentUpon>payments.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v1\peoples.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v1\peoples.cs" />
     <Compile Include="controls\v1\peoples.Designer.cs">
       <DependentUpon>peoples.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v1\stdform.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v1\stdform.cs" />
     <Compile Include="controls\v1\stdform.Designer.cs">
       <DependentUpon>stdform.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v2\groupformv2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v2\groupformv2.cs" />
     <Compile Include="controls\v2\groupformv2.Designer.cs">
       <DependentUpon>groupformv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v2\paymentsv2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v2\paymentsv2.cs" />
     <Compile Include="controls\v2\paymentsv2.Designer.cs">
       <DependentUpon>paymentsv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v2\peoplesv2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v2\peoplesv2.cs" />
     <Compile Include="controls\v2\peoplesv2.Designer.cs">
       <DependentUpon>peoplesv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="controls\v2\stdformv2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="controls\v2\stdformv2.cs" />
     <Compile Include="controls\v2\stdformv2.Designer.cs">
       <DependentUpon>stdformv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="customcontrols\CustomBackstageViewControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\main.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="customcontrols\CustomBackstageViewControl.cs" />
+    <Compile Include="forms\main.cs" />
     <Compile Include="forms\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>

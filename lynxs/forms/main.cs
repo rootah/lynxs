@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using lynxs.classes;
 using lynxs.controls;
+using lynxs.controls.v1;
 using lynxs.controls.v2;
 
 namespace lynxs.forms
@@ -27,8 +28,8 @@ namespace lynxs.forms
 
         private void main_Load(object sender, System.EventArgs e)
         {
-            peoplesCtrl.groupFullFill();
-            gears1.fakeCheck.Checked = Properties.Settings.Default.fakegen;
+            //peoplesCtrl.groupFullFill();
+            
         }
 
         private void startNewStd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -106,10 +107,19 @@ namespace lynxs.forms
 
         private void backstageMain_SelectedTabChanged(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
-            if (backstageMain.SelectedTabIndex == 1)
+            if (backstageMain.SelectedTabIndex == 1 || backstageMain.SelectedTabIndex == 2)
             {
-                ribbonPaymentsCat.Visible = true;}
+                ribbonPaymentsCat.Visible = true;
+                ribbon.SelectedPage = ribbonMoneys;
+            }
             else ribbonPaymentsCat.Visible = false;
+        }
+
+        private void main_BindingContextChanged(object sender, System.EventArgs e)
+        {
+            // before form load event
+            peoplesCtrl.groupFullFill();
+            gears1.fakeCheck.Checked = Properties.Settings.Default.fakegen;
         }
     }
 }

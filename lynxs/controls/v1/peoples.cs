@@ -64,13 +64,16 @@ namespace lynxs.controls.v1{
                 var id = studentView.GetRowCellValue(studentView.FocusedRowHandle, "_id").ToString();
                 var detail = await dbActions.stdDetail(id);
                 var x = detail["contacts"].AsBsonDocument;
-                
-                infoheader.Text = (string)detail["fullname"];
+
+                infoHeader.Text = (string) detail["fullname"];
                 phonemain.Text = (string) x["phonemain"];
                 phoneadd.Text = (string) x["phoneadd"];
             }
             catch
-            { }
+            {
+                infoHeader.Text = @"mission impossible";
+                phonemain.Text = @" .. null";phoneadd.Text = @" .. null";
+            }
         }
     }
 }

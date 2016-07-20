@@ -31,9 +31,6 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.phoneadd = new DevExpress.XtraEditors.LabelControl();
             this.phonemain = new DevExpress.XtraEditors.LabelControl();
-            this.infoheader = new DevExpress.XtraEditors.LabelControl();
-            this.stdHeadLabel = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.studentGrid = new DevExpress.XtraGrid.GridControl();
             this.realTimeStudents = new DevExpress.Data.RealTimeSource();
             this.studentView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -45,9 +42,6 @@
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.paymentsgroup = new DevExpress.XtraLayout.LayoutControlGroup();
             this.contactsgroup = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -55,6 +49,9 @@
             this.phonemainlabel = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.stdHeadLabel = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.infoHeader = new DevExpress.XtraLayout.SimpleLabelItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentGrid)).BeginInit();
@@ -66,9 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentsgroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactsgroup)).BeginInit();
@@ -76,15 +70,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.phonemainlabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdHeadLabel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.phoneadd);
             this.layoutControl1.Controls.Add(this.phonemain);
-            this.layoutControl1.Controls.Add(this.infoheader);
-            this.layoutControl1.Controls.Add(this.stdHeadLabel);
-            this.layoutControl1.Controls.Add(this.labelControl4);
             this.layoutControl1.Controls.Add(this.studentGrid);
             this.layoutControl1.Controls.Add(this.groupGrid);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,75 +100,25 @@
             this.phoneadd.StyleController = this.layoutControl1;
             this.phoneadd.TabIndex = 13;
             this.phoneadd.Text = "...";
+            this.phoneadd.Visible = false;
             // 
             // phonemain
             // 
-            this.phonemain.Location = new System.Drawing.Point(492, 69);
+            this.phonemain.Location = new System.Drawing.Point(492, 70);
             this.phonemain.Name = "phonemain";
-            this.phonemain.Size = new System.Drawing.Size(178, 38);
+            this.phonemain.Size = new System.Drawing.Size(178, 37);
             this.phonemain.StyleController = this.layoutControl1;
             this.phonemain.TabIndex = 12;
             this.phonemain.Text = "...";
-            // 
-            // infoheader
-            // 
-            this.infoheader.Appearance.FontSizeDelta = 1;
-            this.infoheader.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.infoheader.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.infoheader.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.infoheader.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.infoheader.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.infoheader.Location = new System.Drawing.Point(423, 7);
-            this.infoheader.Name = "infoheader";
-            this.infoheader.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.infoheader.Size = new System.Drawing.Size(259, 23);
-            this.infoheader.StyleController = this.layoutControl1;
-            this.infoheader.TabIndex = 11;
-            this.infoheader.Text = "info";
-            this.infoheader.UseMnemonic = false;
-            // 
-            // stdHeadLabel
-            // 
-            this.stdHeadLabel.Appearance.FontSizeDelta = 1;
-            this.stdHeadLabel.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.stdHeadLabel.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.stdHeadLabel.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.stdHeadLabel.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.stdHeadLabel.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.stdHeadLabel.Location = new System.Drawing.Point(167, 7);
-            this.stdHeadLabel.Name = "stdHeadLabel";
-            this.stdHeadLabel.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.stdHeadLabel.ShowLineShadow = false;
-            this.stdHeadLabel.Size = new System.Drawing.Size(240, 22);
-            this.stdHeadLabel.StyleController = this.layoutControl1;
-            this.stdHeadLabel.TabIndex = 10;
-            this.stdHeadLabel.Text = "students";
-            this.stdHeadLabel.UseMnemonic = false;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.FontSizeDelta = 1;
-            this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
-            this.labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl4.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.labelControl4.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.labelControl4.Location = new System.Drawing.Point(7, 7);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.labelControl4.Size = new System.Drawing.Size(144, 23);
-            this.labelControl4.StyleController = this.layoutControl1;
-            this.labelControl4.TabIndex = 9;
-            this.labelControl4.Text = "groups";
-            this.labelControl4.UseMnemonic = false;
+            this.phonemain.Visible = false;
             // 
             // studentGrid
             // 
             this.studentGrid.DataSource = this.realTimeStudents;
-            this.studentGrid.Location = new System.Drawing.Point(167, 33);
+            this.studentGrid.Location = new System.Drawing.Point(167, 35);
             this.studentGrid.MainView = this.studentView;
             this.studentGrid.Name = "studentGrid";
-            this.studentGrid.Size = new System.Drawing.Size(240, 358);
+            this.studentGrid.Size = new System.Drawing.Size(240, 356);
             this.studentGrid.TabIndex = 5;
             this.studentGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.studentView});
@@ -209,10 +153,10 @@
             // groupGrid
             // 
             this.groupGrid.DataSource = this.realTimeGroup;
-            this.groupGrid.Location = new System.Drawing.Point(7, 34);
+            this.groupGrid.Location = new System.Drawing.Point(7, 35);
             this.groupGrid.MainView = this.groupView;
             this.groupGrid.Name = "groupGrid";
-            this.groupGrid.Size = new System.Drawing.Size(144, 357);
+            this.groupGrid.Size = new System.Drawing.Size(144, 356);
             this.groupGrid.TabIndex = 4;
             this.groupGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.groupView});
@@ -247,11 +191,11 @@
             this.splitterItem2,
             this.layoutControlItem1,
             this.layoutControlItem2,
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem8,
             this.tabbedControlGroup1,
-            this.emptySpaceItem1});
+            this.emptySpaceItem1,
+            this.simpleLabelItem1,
+            this.stdHeadLabel,
+            this.infoHeader});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
@@ -275,11 +219,11 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupGrid;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 27);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 28);
             this.layoutControlItem1.MaxSize = new System.Drawing.Size(170, 0);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(104, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(148, 361);
+            this.layoutControlItem1.Size = new System.Drawing.Size(148, 360);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -287,55 +231,22 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.studentGrid;
-            this.layoutControlItem2.Location = new System.Drawing.Point(160, 26);
+            this.layoutControlItem2.Location = new System.Drawing.Point(160, 28);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(290, 0);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(100, 1);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(244, 362);
+            this.layoutControlItem2.Size = new System.Drawing.Size(244, 360);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.labelControl4;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem6.MinSize = new System.Drawing.Size(63, 26);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(148, 27);
-            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
-            // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.stdHeadLabel;
-            this.layoutControlItem7.Location = new System.Drawing.Point(160, 0);
-            this.layoutControlItem7.MinSize = new System.Drawing.Size(73, 26);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(244, 26);
-            this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextVisible = false;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.infoheader;
-            this.layoutControlItem8.Location = new System.Drawing.Point(416, 0);
-            this.layoutControlItem8.MinSize = new System.Drawing.Size(42, 26);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(263, 27);
-            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
-            // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(416, 27);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(416, 28);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.SelectedTabPage = this.paymentsgroup;
             this.tabbedControlGroup1.SelectedTabPageIndex = 1;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(263, 361);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(263, 360);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.contactsgroup,
             this.paymentsgroup});
@@ -344,7 +255,7 @@
             // 
             this.paymentsgroup.Location = new System.Drawing.Point(0, 0);
             this.paymentsgroup.Name = "paymentsgroup";
-            this.paymentsgroup.Size = new System.Drawing.Size(239, 314);
+            this.paymentsgroup.Size = new System.Drawing.Size(239, 313);
             this.paymentsgroup.Text = "payments";
             // 
             // contactsgroup
@@ -355,7 +266,7 @@
             this.emptySpaceItem2});
             this.contactsgroup.Location = new System.Drawing.Point(0, 0);
             this.contactsgroup.Name = "contactsgroup";
-            this.contactsgroup.Size = new System.Drawing.Size(239, 314);
+            this.contactsgroup.Size = new System.Drawing.Size(239, 313);
             this.contactsgroup.Text = "contacts";
             // 
             // layoutControlItem3
@@ -363,7 +274,7 @@
             this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.GrayText;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem3.Control = this.phoneadd;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 42);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 41);
             this.layoutControlItem3.MinSize = new System.Drawing.Size(73, 17);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(239, 40);
@@ -381,7 +292,7 @@
             this.phonemainlabel.Location = new System.Drawing.Point(0, 0);
             this.phonemainlabel.MinSize = new System.Drawing.Size(73, 17);
             this.phonemainlabel.Name = "phonemainlabel";
-            this.phonemainlabel.Size = new System.Drawing.Size(239, 42);
+            this.phonemainlabel.Size = new System.Drawing.Size(239, 41);
             this.phonemainlabel.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.phonemainlabel.Text = "phone #1";
             this.phonemainlabel.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -391,7 +302,7 @@
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 82);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 81);
             this.emptySpaceItem2.MinSize = new System.Drawing.Size(104, 24);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
             this.emptySpaceItem2.Size = new System.Drawing.Size(239, 232);
@@ -408,6 +319,48 @@
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 0, 0, 0);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // simpleLabelItem1
+            // 
+            this.simpleLabelItem1.AllowHotTrack = false;
+            this.simpleLabelItem1.AppearanceItemCaption.FontSizeDelta = 1;
+            this.simpleLabelItem1.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.simpleLabelItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
+            this.simpleLabelItem1.Name = "simpleLabelItem1";
+            this.simpleLabelItem1.Size = new System.Drawing.Size(148, 28);
+            this.simpleLabelItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 0, 5, 5);
+            this.simpleLabelItem1.Text = "groups";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // stdHeadLabel
+            // 
+            this.stdHeadLabel.AllowHotTrack = false;
+            this.stdHeadLabel.AppearanceItemCaption.FontSizeDelta = 1;
+            this.stdHeadLabel.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.stdHeadLabel.AppearanceItemCaption.Options.UseFont = true;
+            this.stdHeadLabel.AppearanceItemCaption.Options.UseForeColor = true;
+            this.stdHeadLabel.Location = new System.Drawing.Point(160, 0);
+            this.stdHeadLabel.Name = "stdHeadLabel";
+            this.stdHeadLabel.Size = new System.Drawing.Size(244, 28);
+            this.stdHeadLabel.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 0, 5, 5);
+            this.stdHeadLabel.Text = "students";
+            this.stdHeadLabel.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // infoHeader
+            // 
+            this.infoHeader.AllowHotTrack = false;
+            this.infoHeader.AppearanceItemCaption.FontSizeDelta = 1;
+            this.infoHeader.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.infoHeader.AppearanceItemCaption.Options.UseFont = true;
+            this.infoHeader.AppearanceItemCaption.Options.UseForeColor = true;
+            this.infoHeader.Location = new System.Drawing.Point(416, 0);
+            this.infoHeader.Name = "infoHeader";
+            this.infoHeader.Size = new System.Drawing.Size(263, 28);
+            this.infoHeader.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 0, 5, 5);
+            this.infoHeader.Text = "info";
+            this.infoHeader.TextSize = new System.Drawing.Size(48, 14);
             // 
             // peoples
             // 
@@ -427,9 +380,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentsgroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactsgroup)).EndInit();
@@ -437,6 +387,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.phonemainlabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdHeadLabel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoHeader)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,14 +401,8 @@
         private DevExpress.XtraGrid.GridControl studentGrid;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
         private DevExpress.XtraLayout.SplitterItem splitterItem2;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraEditors.LabelControl infoheader;
-        private DevExpress.XtraEditors.LabelControl stdHeadLabel;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         public DevExpress.Data.RealTimeSource realTimeGroup;
         public DevExpress.Data.RealTimeSource realTimeStudents;
         public DevExpress.XtraGrid.Views.Grid.GridView studentView;
@@ -470,5 +417,8 @@
         private DevExpress.XtraLayout.LayoutControlItem phonemainlabel;
         private DevExpress.XtraLayout.LayoutControlGroup paymentsgroup;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
+        private DevExpress.XtraLayout.SimpleLabelItem stdHeadLabel;
+        private DevExpress.XtraLayout.SimpleLabelItem infoHeader;
     }
 }

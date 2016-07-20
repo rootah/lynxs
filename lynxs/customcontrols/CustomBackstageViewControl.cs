@@ -21,10 +21,10 @@ namespace lynxs.customcontrols {
       
         public CustomOffice2013BackstageViewInfo(BackstageViewControl control) : base(control) { }
 
-        protected override void AddTransitionAnimation(BackstageViewTransitionAnimationInfo.Direction direction) {
-            ClearTransitionAnimation();
-            BackstageViewTransitionAnimationInfo info = new BackstageViewTransitionAnimationInfo(Control, direction, -LeftPaneBounds.Width, 0, 0, Control.Ribbon, Control, Control.Parent as IXtraAnimationListener);
-            XtraAnimator.Current.AddAnimation(info);
-        }
+        //protected override void AddTransitionAnimation(BackstageViewTransitionAnimationInfo.Direction direction) {
+        //    ClearTransitionAnimation();
+        //    BackstageViewTransitionAnimationInfo info = new BackstageViewTransitionAnimationInfo(Control, direction, -LeftPaneBounds.Width, 0, 0, Control.Ribbon, Control, Control.Parent as IXtraAnimationListener);
+        //    XtraAnimator.Current.AddAnimation(info);
+        //}
     }
 }
